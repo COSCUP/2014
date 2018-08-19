@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>About Us | 2014 COSCUP</title>
+
+<meta name="keywords" content="COSCUP, COSCUP2014, 開源人年會, Conference for Open Source Coders, Users and Promoters Open Source, Free Software, 自由軟體, 開放原始碼, 研討會, 社群, FLOSS">
+<meta name="description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta name="COMPANY" content="COSCUP">
+
+<!--locales-->
+<!--[if gt IE 8]><!-->
+  <link rel="localization" href="/2014/assets/locales/manifest.json">
+  <script type="text/javascript" src="/2014/assets/js/lib/l20n.min.js"></script>
+<!--<![endif]-->
+
+<!--fb shareing-->
+<meta property="og:title" content="2014 COSCUP" />
+<meta name="og:description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://coscup.org/2014/zh-tw/" />
+<meta property="og:site_name" content="2014 COSCUP" />
+<meta property="og:image" content="http://coscup.org/2014/assets/og-image.jpg" />
+
+<!--phone-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="apple-touch-icon" href="/2014/assets/ios-fav.jpg" />
+<link href="/2014/assets/normalize.css" type= "text/css" rel="stylesheet" />
+<link media="only screen and (max-width:768px)" href="/2014/assets/mobile.css?115" type= "text/css" rel="stylesheet" />
+<link media="screen and (min-width:769px)" href="/2014/assets/style.css?115" type="text/css" rel="stylesheet" />
+<!--favicon-->
+<link type="image/x-icon" href="/2014/assets/favicon.ico" rel="shortcut icon">
+
+<!-- GA -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12923351-1']);
+    _gaq.push(['_setDomainName', 'coscup.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script src="/2014/assets/js/lib/require.js"></script>
+<script>
+    require.config({
+      baseUrl: "/2014/assets/js"
+    });
+    //Load common code that includes config, then load the specific
+    //logic for this page. 
+    //Do the require calls here instead of a separate file 
+    //so after a build there are only 2 HTTP requests instead of three.
+    require(['config', 'main-menu', 'sidebar-sponsor'], function () {
+      require(['page/about'], null, function(err) {
+        var failedId = err.requireModules && err.requireModules[0];
+        console.log(failedId + ' is not existing');
+      });
+    });
+</script>
+
+</head>
+<body>
+<div id="header">
+    <img id="mobile-header" src="/2014/assets/mobile/header.jpg" width="100%" />
+    <div class="wrap">
+      <div id="logo"><a href="/2014/en/index.html">COSCUP 2014</a></div>
+        <ul id="languages" class="no-decoration">
+                    <li><a href="/2014/en/about" title="English" data-lang="en-US">EN</a></li>
+          <li><a href="/2014/zh-tw/about" title="正體中文" data-lang="zh-TW">正體</a></li>
+          <li><a href="/2014/zh-cn/about" title="简体中文" data-lang="zh-CN">简体</a></li>
+        </ul>
+	    <ul id="desktop-social-links" class="no-decoration">
+        <li><a href="https://www.facebook.com/coscup" title="facebook" target="_blank"><img src="/2014/assets/icon_fb.png"/></a></li>
+        <li><a href="https://plus.google.com/101434041225212178932" title="Google+" rel="publisher" target="_blank"><img src="/2014/assets/icon_gplus.png"/></a></li>
+        <li><a href="http://www.plurk.com/coscup" title="plurk" target="_blank"><img src="/2014/assets/icon_plurk.png" /></a></li>
+        <li><a href="https://twitter.com/coscup" title="twitter" target="_blank"><img src="/2014/assets/icon_twitter.png" /></a></li>
+        <li><a href="http://blog.coscup.org" title="blog" target="_blank"><img src="/2014/assets/icon_blog.png" /></a></li>
+        <li><a href="http://www.flickr.com/photos/coscup/sets/" title="flickr" target="_blank"><img src="/2014/assets/icon_flickr.png"  /></a></li>
+        <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" title="youtube" target="_blank"><img src="/2014/assets/icon_utube.png" /></a></li>
+	    </ul>
+      <nav id="nav-wrap">
+        <div id="mobile-menu-icon" data-l10n-id="menu">選單</div>
+        <ul id="mainNav" class="no-decoration">
+          <li><a href="/2014/en/index.html">Home</a></li>
+<li class="current"><a href="/2014/en/about/">About Us</a></li>
+<li><a href="/2014/en/program/">Program</a></li>
+<li><a href="/2014/en/venue/">Venue</a></li>
+<li><a href="/2014/en/sponsors/">Sponsors</a></li>
+<li><a href="http://blog.coscup.org/" target="_blank">Blog</a></li>
+<li><a href="/2014/en/contact/">Contact</a></li>
+        </ul>
+      </nav> 
+    </div>
+</div>
+<!--Main-->
+<div id="main">
+<div class="wrap">
+  <!--Sponsor-->
+  <div id="sponsor" class="empty">
+    <h2 data-l10n-id="sponsorship">贊助 COSCUP</h2>
+    <p data-l10n-id="mailtoSponsor"><a href="mailto:sponsorship@coscup.org">sponsorship@coscup.org</a></p>
+  </div>
+  <div id="mySwipe" style='max-width:500px;margin:0 auto' class="swipe empty">
+  </div>
+  <div id="content">
+    <h1>About COSCUP</h1>
+
+<p><img src="images/a01.jpg" class="ab01">It is a common fact that coders from traditional commercial software rarely interact with users.</p>
+
+<p>Is there a trouble on your software? Call the telephone support service, our technicians may help you. Hard as they tried, your problem still remains. If it is caused by a bug, the only solution is to wait until the new version releases. The only reason why you have chosen software A instead of B, is probably because of the sales' branin-washing or your friends' recommandation. Under this behavior pattern, users and coders confront with sales and customers service, while what users encounter can't be passed on directly, and your real question travels a long journey to get the right person.</p>
+
+<p>The term "Open Source" appears in 1998, which is familiar to everyone. This kind of developing pattern working Internet over 20 to 30 years, attributes to many reasons. The key factor may be the direct interaction with coders and users, which forms a rapid feedback and patch system on bugs. This pattern is enlarged by Network, where Linus's law "With enough eyeballs, all bugs are shallow" occurs, thereby the software's quality enhances. In Open Source pattern, promoters take the position between coders and users, rather than sales and customer service. They package software suites to get installation easier, write documents to lower down its learning curve, hold events to spread good software, solve questions from the Internet without creating information asymmetric to coders.</p>
+
+<p><img src="images/a02.jpg" class="ab02">This conference is organized for three kinds of roles that makes Open Source Software sparkle. They are coders, promoters, and users. You might be a coder from Software A, a promoter from Software B, and an user from Software C. No matter you have already stepped into the field of Open Source, or even standing on the gate wandering, we welcome you to attand the annual biggest Conference for Open Source Coders, Users, and Promoters in Taiwan!</p>
+
+<p>COSCUP celebrated its 9th anniversary this year. Over the past 8 years, the event has co-operated with coumminities all over the world. With everyone's involvement, we grow sustainly. Whoever you are a Open Source coder, a devoted Open Source promoter, a user fimiliar with Open Source, or even a newbie, we sincerely welcome you to be a part of COSCUP.</p>
+
+<h2>2014 Organizing Team</h2>
+
+<p><div class="team"></p>
+
+<h3>Organizer</h3>
+
+<p><strong><a href="https://reps.mozilla.org/u/bobchao/">BobChao</a></strong>（Mozilla Community）</p>
+
+<h3>Session Convener</h3>
+
+<p>Leader: <strong>cclien</strong></p>
+
+<ul>
+<li>AL - 小卓</li>
+<li>Danny</li>
+<li>Jenny (jsliang)</li>
+<li>Mosky</li>
+<li>Richard 強哥</li>
+<li>大眼</li>
+<li>義鴻</li>
+</ul>
+
+<h3>Sales</h3>
+
+<p>Leader: <strong>蝦蝦shiashia</strong></p>
+
+<ul>
+<li>Ernest (dwchiang)</li>
+<li>Paddy</li>
+<li>糖果荔枝</li>
+</ul>
+
+<h3>Marketing</h3>
+
+<p>Leader: <strong>Muka</strong></p>
+
+<ul>
+<li>#Chiakai</li>
+<li>pingooo</li>
+<li>RSChiang</li>
+<li>Singing</li>
+<li>Violet 阿紫</li>
+<li>凍仁翔</li>
+<li>雁子</li>
+</ul>
+
+<h3>PR</h3>
+
+<p>Leader: <strong>仁豪</strong></p>
+
+<h3>Field Service</h3>
+
+<p>Leader: <strong>MouseMs</strong></p>
+
+<ul>
+<li>Aleck陳經理</li>
+<li>Angelboy</li>
+<li>CCKai</li>
+<li>Clarence</li>
+<li>Eason</li>
+<li>Egret</li>
+<li>Ei-ling 艾岭</li>
+<li>Elvis</li>
+<li>Emma</li>
+<li>Fish福</li>
+<li>FrankWu</li>
+<li>frankye</li>
+<li>Henry Lee</li>
+<li>Kevin</li>
+<li>Kevin-WY</li>
+<li>Kiki</li>
+<li>lin4h</li>
+<li>Lulu</li>
+<li>Marsen</li>
+<li>NaNi</li>
+<li>Rifur</li>
+<li>RJ</li>
+<li>sanyuan</li>
+<li>SONY</li>
+<li>Stanley</li>
+<li>swem 蕭辰翰</li>
+<li>Teresa</li>
+<li>Trista</li>
+<li>Vagabond</li>
+<li>Vincent</li>
+<li>Wei</li>
+<li>wenhao</li>
+<li>ws育慈</li>
+<li>Yexina</li>
+<li>φ (Phi)</li>
+<li>下午</li>
+<li>亞亞</li>
+<li>伊賀</li>
+<li>匡政</li>
+<li>姿姿</li>
+<li>小Q</li>
+<li>小元</li>
+<li>小六</li>
+<li>小宇</li>
+<li>小方</li>
+<li>小馬</li>
+<li>崑元</li>
+<li>平原不是丘陵</li>
+<li>幻幽</li>
+<li>影子</li>
+<li>政哲</li>
+<li>敬育</li>
+<li>Yuna</li>
+<li>欣哥</li>
+<li>洋蔥</li>
+<li>白白的莫風</li>
+<li>立揚</li>
+<li>糖萱</li>
+<li>紗子</li>
+<li>花花</li>
+<li>阿膽</li>
+<li>高個</li>
+<li>魏言</li>
+<li>魚魚</li>
+<li>麵包</li>
+</ul>
+
+<h3>Network Service</h3>
+
+<p>Leader: <strong>David Huang</strong></p>
+
+<ul>
+<li>Conan</li>
+<li>cyrandy</li>
+<li>DennyHuang</li>
+<li>Ei-ling 艾岭</li>
+<li>HenryYang</li>
+<li>itsneo</li>
+<li>Ming</li>
+<li>Nalant</li>
+<li>Peter</li>
+<li>Sars</li>
+<li>sntc06</li>
+<li>Starlition</li>
+<li>xxx</li>
+<li>凌羽</li>
+<li>小六</li>
+<li>小明</li>
+<li>小翊</li>
+<li>左邊</li>
+<li>手慢君</li>
+<li>波卡Poka</li>
+<li>浚原</li>
+<li>皇甫</li>
+<li>竹本立里</li>
+<li>胖胖</li>
+<li>腹黒い茶</li>
+<li>阿嘉</li>
+</ul>
+
+<h3>Archiving Team</h3>
+
+<p>Leader: <strong>丞相</strong></p>
+
+<ul>
+<li>adaam</li>
+<li>Aminzai</li>
+<li>Arvin</li>
+<li>Can</li>
+<li>CJOKER</li>
+<li>Daniel丹丹</li>
+<li>Iven</li>
+<li>Mike</li>
+<li>Stanley</li>
+<li>w</li>
+<li>Zac</li>
+<li>傑諾特</li>
+<li>勞倫斯</li>
+<li>小聖</li>
+<li>小豪</li>
+<li>日京三子</li>
+<li>星雨</li>
+<li>歐三</li>
+<li>西歪街</li>
+<li>黃牙牙</li>
+</ul>
+
+<h3>Accountant</h3>
+
+<p>Leader: <strong>Tim Chen</strong></p>
+
+<ul>
+<li>Toby Liu</li>
+<li>Singing</li>
+</ul>
+
+<h3>Cashier</h3>
+
+<p>Leader: <strong>Lloyd Huang</strong></p>
+
+<h3>Administration Assistant</h3>
+
+<p>Leader: <strong>小畢 (CrBoy)</strong></p>
+
+<ul>
+<li>choupi</li>
+<li>Idril*阿南</li>
+<li>Jie</li>
+<li>nfsnfs</li>
+<li>Orange</li>
+<li>Rainny</li>
+<li>Yiling Chen</li>
+<li>一枝</li>
+<li>奇猴</li>
+<li>小草</li>
+<li>豬豬</li>
+<li>闇鴉/Lora</li>
+</ul>
+
+<h3>Website</h3>
+
+<ul>
+<li>Evelyn Hung</li>
+<li>Kanru</li>
+</ul>
+
+<p></div></p>
+  </div>
+</div>
+</div>
+<!--social Mobile-->
+<ul id="mobile-social-links" class="no-decoration">
+  <li class="title">Follow Us!!<hr></li>
+  <li><a href="https://www.facebook.com/coscup" target="_blank"><img src="/2014/assets/icon_fb.png" align="absmiddle" /><span>facebook</span></a></li>
+  <li><a href="https://plus.google.com/101434041225212178932" target="_blank"><img src="/2014/assets/icon_gplus.png" align="absmiddle" /><span>Google+</span></a></li>
+  <li><a href="http://www.plurk.com/coscup" target="_blank"><img src="/2014/assets/icon_plurk.png" align="absmiddle" /><span>Plurk</span></a></li>
+  <li><a href="https://twitter.com/coscup" target="_blank"><img src="/2014/assets/icon_twitter.png" align="absmiddle" /><span>twitter</span></a></li>
+  <li><a href="http://blog.coscup.org" target="_blank"><img src="/2014/assets/icon_blog.png"  align="absmiddle" /><span>Blog</span></a></li>
+  <li><a href="http://www.flickr.com/photos/coscup/sets/" target="_blank"><img src="/2014/assets/icon_flickr.png"  align="absmiddle" /><span>flickr</span></a></li>
+  <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" target="_blank"><img src="/2014/assets/icon_utube.png"  align="absmiddle" /><span>Youtube</span></a></li>
+</ul><!--social Mobile end-->
+<!--底-->
+<div id="footer">
+  <ul class="no-decoration">
+    <li><span>&copy; 2014 COSCUP<span></li>
+    <li><a data-l10n-id="contactUs" href="/2014/en/contact/">聯絡我們</a>|</li>
+    <li><a href="http://coscup.org/2006/" target="_blank">2006</a>|</li>
+    <li><a href="http://coscup.org/2007/" target="_blank">2007</a>|</li>
+    <li><a href="http://coscup.org/2008/" target="_blank">2008</a>|</li>
+    <li><a href="http://coscup.org/2009/" target="_blank">2009</a>|</li>
+    <li><a href="http://coscup.org/2010/" target="_blank">2010</a>|</li>
+    <li><a href="http://coscup.org/2011/" target="_blank">2011</a>|</li>
+    <li><a href="http://coscup.org/2012/" target="_blank">2012</a>|</li>
+    <li><a href="http://coscup.org/2013/" target="_blank">2013</a>|</li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>贊助單位 | 2014 COSCUP</title>
+
+<meta name="keywords" content="COSCUP, COSCUP2014, 開源人年會, Conference for Open Source Coders, Users and Promoters Open Source, Free Software, 自由軟體, 開放原始碼, 研討會, 社群, FLOSS">
+<meta name="description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta name="COMPANY" content="COSCUP">
+
+<!--locales-->
+<!--[if gt IE 8]><!-->
+  <link rel="localization" href="/2014/assets/locales/manifest.json">
+  <script type="text/javascript" src="/2014/assets/js/lib/l20n.min.js"></script>
+<!--<![endif]-->
+
+<!--fb shareing-->
+<meta property="og:title" content="2014 COSCUP" />
+<meta name="og:description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://coscup.org/2014/zh-tw/" />
+<meta property="og:site_name" content="2014 COSCUP" />
+<meta property="og:image" content="http://coscup.org/2014/assets/og-image.jpg" />
+
+<!--phone-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="apple-touch-icon" href="/2014/assets/ios-fav.jpg" />
+<link href="/2014/assets/normalize.css" type= "text/css" rel="stylesheet" />
+<link media="only screen and (max-width:768px)" href="/2014/assets/mobile.css?483" type= "text/css" rel="stylesheet" />
+<link media="screen and (min-width:769px)" href="/2014/assets/style.css?483" type="text/css" rel="stylesheet" />
+<!--favicon-->
+<link type="image/x-icon" href="/2014/assets/favicon.ico" rel="shortcut icon">
+
+<!-- GA -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12923351-1']);
+    _gaq.push(['_setDomainName', 'coscup.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script src="/2014/assets/js/lib/require.js"></script>
+<script>
+    require.config({
+      baseUrl: "/2014/assets/js"
+    });
+    //Load common code that includes config, then load the specific
+    //logic for this page. 
+    //Do the require calls here instead of a separate file 
+    //so after a build there are only 2 HTTP requests instead of three.
+    require(['config', 'main-menu', 'sidebar-sponsor'], function () {
+      require(['page/sponsors'], null, function(err) {
+        var failedId = err.requireModules && err.requireModules[0];
+        console.log(failedId + ' is not existing');
+      });
+    });
+</script>
+
+</head>
+<body>
+<div id="header">
+    <img id="mobile-header" src="/2014/assets/mobile/header.jpg" width="100%" />
+    <div class="wrap">
+      <div id="logo"><a href="/2014/zh-tw/index.html">COSCUP 2014</a></div>
+        <ul id="languages" class="no-decoration">
+                    <li><a href="/2014/en/sponsors" title="English" data-lang="en-US">EN</a></li>
+          <li><a href="/2014/zh-tw/sponsors" title="正體中文" data-lang="zh-TW">正體</a></li>
+          <li><a href="/2014/zh-cn/sponsors" title="简体中文" data-lang="zh-CN">简体</a></li>
+        </ul>
+	    <ul id="desktop-social-links" class="no-decoration">
+        <li><a href="https://www.facebook.com/coscup" title="facebook" target="_blank"><img src="/2014/assets/icon_fb.png"/></a></li>
+        <li><a href="https://plus.google.com/101434041225212178932" title="Google+" rel="publisher" target="_blank"><img src="/2014/assets/icon_gplus.png"/></a></li>
+        <li><a href="http://www.plurk.com/coscup" title="plurk" target="_blank"><img src="/2014/assets/icon_plurk.png" /></a></li>
+        <li><a href="https://twitter.com/coscup" title="twitter" target="_blank"><img src="/2014/assets/icon_twitter.png" /></a></li>
+        <li><a href="http://blog.coscup.org" title="blog" target="_blank"><img src="/2014/assets/icon_blog.png" /></a></li>
+        <li><a href="http://www.flickr.com/photos/coscup/sets/" title="flickr" target="_blank"><img src="/2014/assets/icon_flickr.png"  /></a></li>
+        <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" title="youtube" target="_blank"><img src="/2014/assets/icon_utube.png" /></a></li>
+	    </ul>
+      <nav id="nav-wrap">
+        <div id="mobile-menu-icon" data-l10n-id="menu">選單</div>
+        <ul id="mainNav" class="no-decoration">
+          <li><a href="/2014/zh-tw/index.html">首頁</a></li>
+<li><a href="/2014/zh-tw/about/">活動簡介</a></li>
+<li><a href="/2014/zh-tw/program/">議程</a></li>
+<li><a href="/2014/zh-tw/venue/">地點</a></li>
+<li class="current"><a href="/2014/zh-tw/sponsors/">贊助單位</a></li>
+<li><a href="http://blog.coscup.org/" target="_blank">部落格</a></li>
+<li><a href="/2014/zh-tw/contact/">聯絡資訊</a></li>
+        </ul>
+      </nav> 
+    </div>
+</div>
+<!--Main-->
+<div id="main">
+<div class="wrap">
+  <!--Sponsor-->
+  <div id="sponsor" class="empty">
+    <h2 data-l10n-id="sponsorship">贊助 COSCUP</h2>
+    <p data-l10n-id="mailtoSponsor"><a href="mailto:sponsorship@coscup.org">sponsorship@coscup.org</a></p>
+  </div>
+  <div id="mySwipe" style='max-width:500px;margin:0 auto' class="swipe empty">
+  </div>
+  <div id="content">
+    <h1 id="diamond" data-l10n-id="diamond"></h1>
+<div class="sponsor">
+<a href="http://aws.amazon.com/" target="_blank"><img src="/2014/sponsors/aws.png" alt="Amazon Web Services (AWS)" />
+  <div class="sponsor-info">
+    <h2>Amazon Web Services (AWS)</h2>
+    <p>亞馬遜雲端運算(Amazon Web Service) 是一個高度可靠(Highly Reliable)，高擴充性(Highly Scalable)， 低成本(Low Cost)的基礎設施平台。 AWS在全球各地的客戶分布超過190個國家和地區，擁有數以千計的跨國公司，政府機構以及創業團隊。自從2006年推出以來，AWS利用建立在自己後端技術平台上的技術向廣大企業提供網絡服務。</p>
+
+<p>技術創新一直是公司的核心文化，驅動著亞馬遜各部門的成長。經過十多年建設和運行運行巨大規模、高度可擴展的電子商務平台(Amazon.com) 的經驗，公司總結出了一套成功經營大規模技術基礎設施和數據中心的核心競爭力，併步入了一個更廣泛的新領域 -- 為開發人員和企業提供網路服務的平台。</p>
+
+<p>如今，AWS平台包括30多個不同的服務，包括彈性計算(Elastic Compute Cloud)，存儲服務(Simple Storage Service)，數據庫服務(Relational Database Service)。 AWS的客戶可以選擇最適合其業務的發展平台或解決方案，進而把焦點放在企業創新，而不是花時間與金錢在維運硬體設備上。AWS的客戶包括高速成長的創業公司，例如Spotify，Dropbox和Pinterest，也包括成熟的大型公司，例如三星，殼牌，洲際酒店集團。當然也不乏台灣企業與新創團隊，例如TrendMico, D-Link, Pixnet, Cubie Messenger,
+iCook… 等。</p>
+
+<p>AWS 目前在全球擁有多個數據中心（美國，巴西，歐洲，日本，新加坡和澳大利亞)，您可以選擇最適合貴公司業務市場的數據中心佈署服務。建議您可以透過 http://aws.amazon.com/free/ 註冊一個AWS帳號，並開始進行測試。</p>
+
+<p>若您有任何AWS的相關問題，且希望跟AWS台灣團隊聯繫，請聯絡Locarno Pan locarnop@amazon.com 或是 James Tien jtien@amazon.com 。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.asuscloud.com" target="_blank"><img src="/2014/sponsors/175-logo.jpg" alt="華碩雲端股份有限公司" />
+  <div class="sponsor-info">
+    <h2>華碩雲端股份有限公司</h2>
+    <p>華碩雲端為華碩發展雲端服務的經營團隊，以資料為核心推動整合性創新，解決大量數位資料的管理並串聯軟硬體資源，滿足使用者從生產力到娛樂的雲端需求。華碩雲端於全球擁有諸多據點資料中心，並於雲端平台設置嚴謹的資安防護技術，為使用者及企業打造安全無虞的雲端空間；同時，華碩亦開放雲端平台資源，積極與各領域夥伴合作，加速產業整合與創新，豐富雲端生態圈的應用服務。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.rstaiwan.com" target="_blank"><img src="/2014/sponsors/RSlogo_300dpi.png" alt="RS" />
+  <div class="sponsor-info">
+    <h2>RS</h2>
+    <p>RS Components 是優質服務領先全球的電子及維修產品分銷商，服務全球超過100萬名工程師。RS 辦事處遍佈32個國家及擁有17個倉庫，提供500,000款產品，包括電子、自動化與控制、測試及測量、電氣和機械元件，且每天發出約 44,000 個包裹。</p>
+
+<p>RS更提供一系列的開放源碼硬體平台，包括Raspberry Pi, Arduino, BeagleBone Black, mbed, chipKIT等等不同的平台，還有開放源碼的Reprap Pro Ormerod 3D印表機和Red Pitaya儀錶，讓大家可以有更多開放源碼硬體的選擇。</p>
+
+<p>瀏覽RS的工程師線上支援平台designspark.com，即可免費下載DesignSpark PCB電路圖設計軟體、DesignSpark Mechanical 3D設計軟體和ModelSource圖庫 (電路圖符號及3D模型)。該網站彙集了設計資訊、教學影片、軟體和開發板的中文教學和科技部落格，並提供免費設計工具，為工程師提供貫穿設計流程的全方位支援，目前的註冊會員已逾24萬名。</p>
+
+<p>RS Online台灣購買平台: www.rstaiwan.com </p>
+
+<p>DesignSpark工程社區: www.designspark.com </p>
+
+<p>Facebook專頁: www.facebook.com/DSChinese </p>
+
+<p>YouTube頻道: www.youtube.com/user/DesignSparkTW</p>
+  </div>
+</a></div>
+<h1 id="gold" data-l10n-id="gold"></h1>
+<div class="sponsor">
+<a href="http://www.skymizer.com/?from=coscup" target="_blank"><img src="/2014/sponsors/skymizer_logo.png" alt="Skymizer" />
+  <div class="sponsor-info">
+    <h2>Skymizer</h2>
+    <p>Skymizer - Build Software Better and Faster
+Skymizer 是一家提供 ARM 平台系統軟體 (GCC, LLVM, Android, Linux) 解決方案的公司，藉由其獨到的編譯器最佳化技術，強化軟體品質、增加效能。
+我們透過「平行編譯」與「海量分析」技術，尋找出軟體的效能瓶頸與最好的編譯策略，做到全系統自動化的效能調校。
+Skymizer 是一群熱血勇者（頂尖的工程師與資訊科學家）對抗強大巨龍（編譯器、作業系統、軟硬體效能）。技術團隊來自台、清、交與世界頂尖公司 (Google、Mediatek、Marvell)。Skymizer 成員均長期貢獻於 Open Source，與 GCC、Android 與 BSD 等社群都有貢獻與互動，願景是為開源撒下更多的種子，做為台灣與國際開源社群之間的橋樑。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.appier.com/en/index.html" target="_blank"><img src="/2014/sponsors/appier_logo-01 (1).png" alt="Appier" />
+  <div class="sponsor-info">
+    <h2>Appier</h2>
+    <p>成立於2012年，Appier是一家提供多螢數位行銷解決方案的科技公司，期許讓數位廣告不再只是廣告，而是能夠連結消費者與廣告主的實用內容。團隊成員透過頂尖人工智慧進行海量資料的研究與分析，致力在對的時間點，傳遞消費者真正想要看到的內容至對的螢幕上，讓廣告主及消費者都能體驗一個更輕鬆、更愉快的數位生活。</p>
+
+<p>Appier由充滿熱情的電腦、資訊科學家以及網路行銷專家所組成，成員從Google、Intel、Splunk、Yahoo等知名企業而來，技術團隊則來自於擁有豐富人工智慧研究成果的哈佛及史丹佛大學。總部設立於台北，在舊金山及新加坡設有據點，Appier將利用尖端科技協助客戶達成行銷目標，並在全球市場中獲得最佳投資報酬率。更多資訊請至www.appier.com。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.pixnet.net/" target="_blank"><img src="/2014/sponsors/PIXNET-logo-complex-background.png" alt="痞客邦" />
+  <div class="sponsor-info">
+    <h2>痞客邦</h2>
+    <p>PIXNET DIGITAL MEDIA</p>
+
+<p>身為台灣品牌驕傲的「PIXNET DIGITAL MEDIA」，自成立的第一天起即秉持「使用者至上」的信念，除提供完整平台服務、各項創新技術，及投入國內網路教育人才培養的產學合作計劃等，身為本土社群龍頭及產業先趨，亦期盼引領台灣網路產業走向國際舞臺。</p>
+
+<p>旗下五大業務主線</p>
+
+<p>痞客邦：</p>
+
+<p>台灣最大社群媒體平台提供部落格、相簿，以及分享生活資訊等服務。</p>
+
+<p>7Headlines：</p>
+
+<p>提供海量資訊篩選、融合個人化興趣與社群分享，免除疲於穿梭在各個網路平台中尋找相關資訊，創造WE MEDIA全民媒體的最佳平台。</p>
+
+<p>技術服務/產品：</p>
+
+<p>致力於提供台灣網路業界相關的專業技術服務以及產品。</p>
+
+<p>行動創新服務：</p>
+
+<p>提供各項因應使用者需求開發的行動技術、APPS等運用產品。</p>
+
+<p>PIXinsight :</p>
+
+<p>利用海量資訊與雲端語意分析系統的口碑行銷數據分析系統。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.advantech.com/" target="_blank"><img src="/2014/sponsors/advantech2014.png" alt="研華科技" />
+  <div class="sponsor-info">
+    <h2>研華科技</h2>
+    <p>為迎接物聯網(IoT)和雲端運算世代的到來，研華以「智能地球推手(Enabling an Intelligent Planet)」做為公司的全新企業形象及願景。研華除深化既有產品的應用之外，也針對公司的經營策略進行相應地調整，未來將以推動整合型IoT解決方案為發展主軸。此外，研華也將投入大量的資源和人力來強化於垂直市場的能見度，並透過跨產業服務平台的支援體系，充分運用進階的網路軟體技術，來發展以IoT為中心的智能應用。研華有信心在IoT、自動化、及嵌入式運算等產業成為最具影響力的跨國公司，並提供客戶以價值為導向的多樣性客製化服務。透過不斷地創新應用發展，研華將全力投入提昇智能化生活與確保人類福祉的企業目標。
+自1983年起，研華ㄧ直在高品質以及高效能運算平台的研發和製造上，扮演一個創新者的角色。因此我們提供了全面性的軟硬體系統整合、以顧客為導向的設計服務、全球後勤支援以及領先同業的電子化辦公室設施等種種無限可能的應用服務。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.vpon.com/zh-tw/" target="_blank"><img src="/2014/sponsors/vpon.png" alt="Vpon" />
+  <div class="sponsor-info">
+    <h2>Vpon</h2>
+    <p>Vpon威朋，全台最大行動數據分析團隊。
+成立於2008年，專注在行動裝置的數據分析以及行動廣告領域，憑藉強大的研發技術、海量數據處理分析，以及對品牌廣告主的商業拓展能力，Vpon威朋已服務超過1,000家知名品牌，包括：麥當勞、可口可樂、美國運通、花旗銀行等。獨立使用者超過2億，廣告業務涵蓋台北、東京、上海、香港等750多個城市，並獲得近千萬美金創投資金。目前Vpon於台北/東京/上海/香港設有辨公室，是亞洲地區成長最迅猛的行動廣告平台，獲選2014年《Forbes China富比士》最具潛力中小企業第6名殊榮。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://mozilla.com.tw/" target="_blank"><img src="/2014/sponsors/firefox_logo-178x72px.png" alt="Mozilla" />
+  <div class="sponsor-info">
+    <h2>Mozilla</h2>
+    <p>Mozilla 是一個全球化的非營利組織，我們的願景是打造一個更開放自由的網路未來，提升人們的網路經驗，並支持開放源碼的資源共享精神。Mozilla 同時也是全球性的社群，由來自世界各地的軟體開發工程師、測試人員、廣告創意人員共同組成，一致的目標是支持網路資源的完全開放共享。Mozilla 相信只有開放的標準才能確保任何人、在任何地方都能感受到最安全、最流暢、多元化的網路經驗。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://gitcafe.com" target="_blank"><img src="/2014/sponsors/gitcafe_logo.png" alt="上海東革志信息科技有限公司 (D.G.Z)" />
+  <div class="sponsor-info">
+    <h2>上海東革志信息科技有限公司 (D.G.Z)</h2>
+    <p>上海東革志信息科技有限公司 (D.G.Z) 是一家支持 Open Source 及資訊社群的新創企業，持續投入資訊教育相關的產品及服務。GitCafe 是 D.G.Z 第一個產品，它是一個程式碼專案託管平台，讓社群及企業中的開發者可以更好、更容易的建立專案，並進行協同開發，致力於讓華語開源圈及開發生態系更加健全。同時，GitCafe 也在兩岸三地與大專院校及學生社群合作推動 Open Source 融入資訊教育的工作，希望能為了開源社群及技術撒下更多種子、培育更多人才。Follow us on Facebook: https://www.facebook.com/pages/DGZ/297933543580139。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.qnap.com.tw/i/cht/" target="_blank"><img src="/2014/sponsors/QNAP logo for COSCUP.jpg" alt="QNAP 威聯通科技" />
+  <div class="sponsor-info">
+    <h2>QNAP 威聯通科技</h2>
+    <p>威聯通科技股份有限公司 (QNAP Systems, Inc.)，如同其品牌所傳達「優質網路應用設備供應商」的承諾，以提供全面及先進的 NAS 網路儲存裝置及 NVR 安全監控系統解決方案為目標，讓使用者享有操作簡單、穩定性能及大儲存空間的數位應用產品。威聯通完美融合科技與設計理念，有效增進企業檔案管理、虛擬化應用、儲存空間管理，及安全監控的管理效率，同時也為家庭使用者提供多媒體影音體驗，豐富家庭娛樂生活。威聯通立足台北，用無盡的創新及熱情將優質產品帶給全世界。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.kkbox.com/tw/tc/index.html" target="_blank"><img src="/2014/sponsors/KKBOX-LOGO_S.png" alt="願境網訊股份有限公司(KKBOX)" />
+  <div class="sponsor-info">
+    <h2>願境網訊股份有限公司(KKBOX)</h2>
+    <p>KKBOX 是由一群熱愛技術及音樂的工程師於 2004 年創立的品牌，以獨創的雲端技術提供音樂串流服務，讓使用者透過網路即可播放儲存在雲端的歌曲；並以技術加密媒體檔 (Digital Rights Management, DRM)，成功地為線上音樂和智慧財產權取得完美的平衡與保護，打開了線上音樂合法授權的版權觀念，更在亞洲市場首度以此商業模式成為標竿品牌。至今，KKBOX 擁有超過 1000 萬首曲目 (包括全球最大的華語音樂曲庫)，獲得超過 500 家主流及獨立唱片公司的合法授權，服務地區包括台灣、香港、日本、新加坡、馬來西亞及泰國。KKBOX 的服務在電腦、智慧型手機或其他行動裝置上都能使用，不只能線上聽音樂，還能下載到電腦或手機中離線收聽，給消費者一個方便自由、沒有界限的音樂世界！</p>
+
+<p>KKBOX 致力打造一個不受時空限制、讓人們輕鬆享受聽音樂、並與同好分享樂趣的平台。除了提供獨家影音、藝人專訪、演唱會現場報導、娛樂新聞、樂評等豐富完整的編輯內容，KKBOX「一起聽」也讓你可以跟著朋友、歌手、名人一起聽同一首歌曲，並與對方即時聊天，讓聽音樂變得更互動、更有趣。此外，KKBOX 在 2011 年推出了《Let’s Music! KKBOX 音樂誌》月刊，期望透過不同的媒體將音樂推向更廣大的市場。而每年年初所舉辦的「KKBOX風雲榜」頒獎典禮，因擁有每年超過 50 億次點播數的公信力，更樹立了KKBOX 在亞洲音樂業界的領導地位。2014 年 KKBOX 推出「KKTIX 售票亭」線上售票服務，以及「KKBOX Live 音樂現場」系列演唱會，讓會員除了線上聆聽千萬曲庫，還能親臨現場享受近距離感動，提供全方位的娛樂體驗和服務，滿足樂迷的多樣需求。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="https://www.google.com" target="_blank"><img src="/2014/sponsors/Goole-logo.png" alt="Google" />
+  <div class="sponsor-info">
+    <h2>Google</h2>
+    <p>Google is a proud user and supporter of open source software and development methodologies. Google contributes back to the Open Source community in many ways, including more than 50 million lines of source code, programs for students including Google Summer of Code and the Google Code-in contest, and support for a wide variety of projects, LUGs, and events around the world.  Learn more at https://developers.google.com/open-source/.</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="https://tw.yahoo.com/" target="_blank"><img src="/2014/sponsors/Yahoo logo.jpg" alt="Yahoo奇摩" />
+  <div class="sponsor-info">
+    <h2>Yahoo奇摩</h2>
+    <p>Yahoo致力於讓全球網友的每日慣性造訪都充滿驚喜和愉悅。透過各種行動裝置，我們提供深入且完整的個人數位內容使用經驗，讓全球網友隨時與其最相關的人事物連結在一起。同時，Yahoo有效連結廣告主與消費者關係，以創造絕佳廣告價值。Yahoo總部位於美國加州森尼維耳市，並於美洲、亞太、歐洲、中東與非洲區都設有辦公據點。</p>
+
+<p>在台灣，Yahoo以Yahoo奇摩為品牌，提供包括搜尋、新聞、知識+、電子信箱、購物中心、拍賣、股市、電影、運動、名人娛樂等多項服務。除服務廣大網友及廣告主，Yahoo奇摩也為企業提供電子商務解決方案。更多訊息歡迎瀏覽Yahoo奇摩企業部落格(http://ycorpblog.tumblr.com/)。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.oracle.com/index.html" target="_blank"><img src="/2014/sponsors/LOGO_mysqlORCALE.png" alt="mysql/ORCALE" />
+  <div class="sponsor-info">
+    <h2>mysql/ORCALE</h2>
+    <p>MySQL是當今全球最受歡迎的開源資料庫，它是一個久經考驗，具有容易使用，高效能以及高可用特性的資料庫。MySQL己經是在網際網路為 基礎的應用系統中居領導地位的首選資料庫，它被許多大型網路應用系統和包括Facebook, Twitter, Youtube, Yahoo等大型用所採用。</p>
+  </div>
+</a></div>
+<h1 id="silver" data-l10n-id="silver"></h1>
+<div class="sponsor">
+<a href="http://www.sharelike.com.tw/" target="_blank"><img src="/2014/sponsors/sharelikelogo.jpg" alt="雪爾萊克" />
+  <div class="sponsor-info">
+    <h2>雪爾萊克</h2>
+    <p>Stampa！蓋吧！是結合軟硬體的電子集點裝置。步驟簡單，
+1.        客戶端輸入手機號碼
+2.        店家端使用電子感應印章蓋印即完成
+協助解決店家行銷與營運問題，創造輕鬆簡單的使用經驗。
+從合作店家中發現，消費者使用意願極高，店家每月可追蹤超過600筆的回流資料。此外亦具有顧客資料蒐集、互動性遊戲、觀光活動、報到系統等延伸性應用。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.softnext.com.tw/" target="_blank"><img src="/2014/sponsors/sf_logo.jpg" alt="中華數位科技" />
+  <div class="sponsor-info">
+    <h2>中華數位科技</h2>
+    <p>中華數位科技 Softnext Technologies Corp. 成立於2000年8月。
+多年來秉持著【We Secure Your Content】的理念，致力於電子郵件安全、網路內容安全、企業資料保護的技術研究與開發，以提供完善的資訊內容安全解決方案及應用服務，協助企業以符合法規規範的方式進行資訊內容安全管理。研發產品榮獲多項創新研發大獎，廣受企業愛用與肯定。</p>
+
+<p>為了協助企業保護機敏資料，中華數位以異業結盟專業分工的模式，結合ISO管理顧問、專業法務律師與資安軟體顧問成立「企業資料保護研究小組」，提供最完善的企業資料保護顧問服務。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://clbc.tw/" target="_blank"><img src="/2014/sponsors/CLBC_LOGO-02.jpg" alt="CLBC - Coworking Space" />
+  <div class="sponsor-info">
+    <h2>CLBC - Coworking Space</h2>
+    <p>台灣科技圈的話題場所，臺北最好的共用工作空間 Coworking Space，科技人最愛、駭客的聖地！初創企業首選創業地點！辦活動、讀書會、講座、小型會議...等公認最好最方便的地點，即租即用</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.godgame.com.tw/" target="_blank"><img src="/2014/sponsors/gamesofa_17872.jpg" alt="神來也" />
+  <div class="sponsor-info">
+    <h2>神來也</h2>
+    <p>慧邦科技Gamesofa成立於2005年，致力於研發與經營5分鐘休閒遊戲。</p>
+
+<p>除了擁有台灣市佔率最高的神來也麻將、大老二、德州撲克等系列遊戲 外，更在2013年推出首款台灣自製3D網頁射擊遊戲《即刻槍戰Guns Rush》, 在2014年推出android多人射擊app《坦克戰境Tank Hit》，積極開拓多元的遊戲類型與海外市場，立志成為世界級休閒遊戲專家！</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.archilife.org" target="_blank"><img src="/2014/sponsors/archilife_logo_178_72.png" alt="祐生研究基金會" />
+  <div class="sponsor-info">
+    <h2>祐生研究基金會</h2>
+    <p>祐生研究基金會自1978年12月30日設立登記以來，以對外一般碩士論文獎助，對內知識整理做為開端，經歷長年紮基的過程，在1987年起大力推動建築與環境永續發展相關的長期研究。在本會探究人類居住環境與永續發展的過程中發覺，近年來資訊科技與數位化的發展對於人類生活模式帶來了舉足輕重的影響，對於此領域之相關知識分享與整合，未來人才培育等等，是我們必需面對的重要課題之一。</p>
+
+<p>因此，本會過去之碩士論文獎助主題除了與建築、環境、生態、健康相關議題以外，亦在2000至2008年間獎助「資訊社會與文化」類型之相關研究主題。而資訊科技與網路的發展為人類精神創發帶來新趨勢，所以在本會經過獎助方法與推廣模式的調整之後，目前首先針對國內獨立遊戲開發相關社群，推動小規模的知識與資訊分享聚會，將參訪國際遊戲開發論壇之研習心得與國內的獨立開發者交流，期能幫助國內相關社群之發展。就其他面向的知識整合來說，過去本會曾發展出知識庫、索引書編寫、養成各科門知識執守者等知識整合應用方式，作為進行主題研究及各項開展會議時消除知識盲點、精進研討結論的利器。目前定期舉辦聯誼會及讀書會，強化祐生成員的知識密度，以面對異質多變的未來。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://adpower.hiiir.com/" target="_blank"><img src="/2014/sponsors/Hiiir.png" alt="時間軸科技" />
+  <div class="sponsor-info">
+    <h2>時間軸科技</h2>
+    <p>2008年成立，為台灣第一家同時提供社群、網際網路、手機網路三網一實解決方案團隊，創辦時以網站聯播工具『好時光貼曆』進入市場，創造百萬會員，單日破千萬PV，並同時追蹤800萬筆中文RSS內容等佳績，並曾獲得 Idea Show 首獎肯定！</p>
+
+<p>時間軸創辦成員擁有網路平台與行動建置營運經驗，六年來從技術型團隊轉型為全方位數位解決方案提供者，獲得許多重要獎項肯定，協助品牌客戶提供多元化行動平台策略，為台灣最大行動行銷專業團隊，服務眾多品牌客戶。同時營運行動商務平台 APP『巷弄』及『配配』！目前也為全球最大手機成效廣告Tapjoy 台灣總代理，是台灣行動媒體及行動商務發展的重要智庫。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://cmcm.com" target="_blank"><img src="/2014/sponsors/CMCM-LOGO.jpg" alt="獵豹移動" />
+  <div class="sponsor-info">
+    <h2>獵豹移動</h2>
+    <p>獵豹移動 (紐約證券交易所代碼：CMCM，原金山網絡)， 是全球google play平台最大的行動工具開發商，是中國第二大網路安全軟體開發商。獵豹移動致力爲全球用戶提供更快速、更簡單、更安全的網路及行動上網體驗。</p>
+
+<p>截至2014年3月，獵豹移動全球每月活躍用戶超過3.62億，在行動裝置上主要有四款核心産品：獵豹清理大師（Clean Master）、CM Security、金山電池醫生及獵豹瀏覽器。其中，獵豹清理大師的每月活躍用戶數超過1.4億，在全球50多個國家Google Play工具排行榜中排名第一。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="https://taiwan-doit.com/" target="_blank"><img src="/2014/sponsors/DOIT-logo.jpg" alt="DOIT共創公域" />
+  <div class="sponsor-info">
+    <h2>DOIT共創公域</h2>
+    <p>「DOIT共創公域」全名為Delivering Open Innovations for Tomorrow，是由經濟部技術處支持，由資策會產業情報研究所(MIC)青年領航學院負責執行成立，DOIT信仰開放式創新，一方面匯聚青年創意點子，協助媒合資源實踐，另一方面則希望影響產業擁抱開放，達成創新目的。在建構DOIT的過程中，我們和很多不同志趣的青年接觸，他們雖專注於不同的領域，擁有多元的價值，但都相信過去單打獨鬥的時代已經過去，個人或小團體的創新速度跟不上世界改變的速度，打團體戰才是王道，小範圍的同好共創，大範圍的跨界共創，甚至是國際間的網絡共創，開放與分享正在改變這個世界的運作方式，世界各種創新組織都在用它們自已的方法加入並共創開啓這個全新的時代，DOIT就是在這樣的浪潮下成立，希望能成為青年發展創意，互相聯結，產業擁抱開放，達成創新的中介平台。
+更多關於DOIT請上：https://taiwan-doit.com/</p>
+  </div>
+</a></div>
+<h1 id="bronze" data-l10n-id="bronze"></h1>
+<div class="sponsor">
+<a href="http://www.unisharp.com" target="_blank"><img src="/2014/sponsors/unisharp2013.png" alt="悠夏爾科技" />
+  <div class="sponsor-info">
+    <h2>悠夏爾科技</h2>
+    <p>悠夏爾科技團隊成員為業界「網站設計開發」、「Agile - Scrum 軟體專案管理」、「Linux 伺服器系統及雲端平台」等領域之專家，幫助客戶在服務開發階段或服務上線前後，做全面的評估、分析及其他實際協助。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.bizeditors.com" target="_blank"><img src="/2014/sponsors/logo-bizeditors.jpg" alt="BizEditors.com (雲翻譯)" />
+  <div class="sponsor-info">
+    <h2>BizEditors.com (雲翻譯)</h2>
+    <p>雲翻譯是一個群眾外包翻譯平台，提供您包含翻譯、編輯、eses服務的多國語言解決方案。</p>
+
+<p>我們的優質平台因快速、高品質與便利性曾獲許多國內外獎項肯定，同時具備合理專案價格，絕對是客戶尋求語言解決方案的首選。例如EMC、DHL、新北市政府、國立成功大學、中研院、電機電子工程協會(IEEE)都是我們長期合作的企業客戶。</p>
+
+<p>除此之外，超過數百間個人與中小企業單位也使用雲翻譯來解決他們在商業文件上編譯的各種需求。</p>
+
+<p>直至今日，雲翻譯的300多位海外專業編輯已協助客戶編修超過一千萬字，並且還在持續服務更多客戶中。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.moko365.com/" target="_blank"><img src="/2014/sponsors/moko2014.png" alt="仕橙 3G 教室" />
+  <div class="sponsor-info">
+    <h2>仕橙 3G 教室</h2>
+    <p>Moko365 創辦之初便以 Research Company 定位，從提供教育訓練開始，以一年的時間，成為台灣最知名的 Android 教育訓練品牌，同時也提供各式的技術服務。Moko365 目前是為台灣、大陸與美國企業指名的 Android 內訓服務公司。於 2014 年 1 月發表 Mokoversity 開放創新學院，提供軟體與創新事業的分享課程；Mokoversity 也打造內部創新團隊，其團隊成員包含 Designer、Coder 與 Angel Investor。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.ares.com.tw/about-ares/job/" target="_blank"><img src="/2014/sponsors/logo-ares.png" alt="資通電腦" />
+  <div class="sponsor-info">
+    <h2>資通電腦</h2>
+    <p>資通電腦股份有限公司是臺灣第一家獲准股票上市櫃的軟體公司，擁有超過三十年企業資訊化服務經驗，為大中華區專業的管理資訊系統軟體供應商。主要服務對象遍及金融、政府和工商企業等單位。 </p>
+
+<p>資通電腦除為環球銀行金融電信協會（SWIFT）認證夥伴、台灣第一家 IFRS 解決方案輔導廠商、Oracle 台灣專業代理商與 Microsoft Gold Certified Partner 外，也為台灣 LED 產業市佔第一的製造執行系統（MES）廠商、市占率最高的銀行海外分行核心系統與外匯系統供應商。卓越成就，有目共睹。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.netbase.com/" target="_blank"><img src="/2014/sponsors/未命名2A.png" alt="NETBASE" />
+  <div class="sponsor-info">
+    <h2>NETBASE</h2>
+    <p>美商網基的總部位於矽谷的核心，是一家快速成長且充滿創業精神的新創公司。我們將網際網路上的新聞，部落格，以及微網誌，經由最尖端的自然語言處理技術(NLP)分析之後，轉化為能回答問題的資訊，幫助客戶更快，更精準的做出商業決策。</p>
+
+<p>美商網基公司榮獲多項獎項:
+如 CGT Reader’s Choice – Best in Class, Gartner Cool Vendor award等.</p>
+
+<p>我們已服務數百家企業客戶，包括:</p>
+
+<p>全球民生消費先驅，例如Coca-Cola，KFC，Kraft，Pizza Hut<br />
+ 全球頂尖科技標竿，例如Microsoft，HTC，SAP，Sony，HP<br />
+ 全球流行時尚經典，例如Estée Lauder，Ralph Lauren<br />
+ 全球媒體娛樂巨擘，例如Time Inc. ESPN，National Geographic<br />
+ 全球市場研究權威，例如J.D.Power，GFK，Forrester  </p>
+
+<p><strong>主要商品 / 服務項目</strong></p>
+
+<p>Accurate, Real-Time Social Media Analytics solutions – 協助客戶從不同的面向，及時掌握包括臉書和推特在內的主流社群網路平台上的各種分析</p>
+
+<p>The LIVE Pulse™ Product Suite – 協助高階主管(executives)隨時隨地掌握特定品牌，行銷活動，及競爭對手在社群媒體上的即時動態</p>
+
+<p>Social Media Engagement – 協助公司內部建立與網友互動的作業流程，以回應及追蹤社群媒體上的重要訊息</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.etusolution.com/index.php/tw/" target="_blank"><img src="/2014/sponsors/20120221_etu_logo_eng_slogan2-01.png" alt="Etu" />
+  <div class="sponsor-info">
+    <h2>Etu</h2>
+    <p>Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。</p>
+
+<p>Etu 團隊成軍於 2011 年，由一群累計擁有 30 年以上 Big Data 技術經驗的專業人士所組成，以共同的巨量資料分析夢想而相聚，並深知分散式運算架構、軟體為王，與自動化管理，才是雲端運算的真諦。早在 Apache Hadoop 誕生以前，Etu 核心成員就已經深入 Big Data 處理技術的發展，參與過世界級的大規模線上服務，與系統管理營運，在商業環境中運行過數百到上萬個節點的服務叢集，實現了先進技術的產業實踐驗證。Etu 數位成員擁有業界目前稀有的 Hadoop 專業認證：Cloudera Certified Developer / Administrator for Apache Hadoop。</p>
+
+<p>更多關於 Etu 訊息，請上 Etu 官網：www.etusolution.com</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.acomotech.com/" target="_blank"><img src="/2014/sponsors/AcoMo-logo.png" alt="AcoMo 杏昕科技股份有限公司" />
+  <div class="sponsor-info">
+    <h2>AcoMo 杏昕科技股份有限公司</h2>
+    <p>杏昕科技股份有限公司主要業務為醫療器材設計服務，2013 年連續獲得德國 iF 設計獎以及德國紅點 (red dot)設計獎。</p>
+
+<p>「輕鬆使用，完整照護」是 AcoMo Technology 研發團隊致力達到的設計目標。而開發一系列標誌著「台灣製造」的優質精品，更是研發團隊從「心」稟持的初衷。</p>
+
+<p>產品範圍將涵括嬰幼兒照護所需的各個面向，以高質量的電子設計研發實力為基礎，讓新生兒父母能輕鬆的使用 AcoMo Technology 所開發的種種人性化精品，在繁瑣的家務活動中，仍能周密地給予每一個寶貴的幼小生命 24 小時 365 天的零距離照護。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.dmp.com.tw/" target="_blank"><img src="/2014/sponsors/DMP logo2.jpg" alt="瞻營全電子股份有限公司" />
+  <div class="sponsor-info">
+    <h2>瞻營全電子股份有限公司</h2>
+    <p>瞻營全電子(DMP)成立於1989年，始終專注於嵌入式電腦系統的研發生產，研發領域涵蓋x86 SoC、嵌入式系統、多媒體應用及智能機器人。DMP產品現今廣泛使用於全球工業電腦製造商、智能電網、綠色節能電腦、工業自動化、監控設備、廣告機及軍工規的嚴苛環境。</p>
+
+<p>由於相信機器人是未來產業發展的一個新趨勢，DMP多年前便規畫並投入大量人物力於機器人關鍵模組及技術研發上，同時也積極參與了國內學研單位(如工研院、精密機械研發中心)的合作開發計劃。為支持國內機器人領域的開源發展，DMP目前有多項機器人及自造者應用相關的開放源碼計劃正在進行，包含人形機器人、LinuxCNC、86Duino開放硬體平台、RoBoard機器人控制器等。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://quanta-research.net/" target="_blank"><img src="/2014/sponsors/QRI-logo.png" alt="廣達研究院" />
+  <div class="sponsor-info">
+    <h2>廣達研究院</h2>
+    <p>廣達研究院 (Quanta Research Institute)是廣達內部未來前瞻科技與產品的研發單位，更是引領雲端創新研發的火車頭。研究院透過整合國內外研發資源，以創新技術的研發與技術人
+才的培育，強化廣達的核心技能、創造利基產品。
+ 
+廣達研究院以「人本自動化創新」為宗旨，透過貼近使用者 (end user)需求的研究、創造新的使用者經驗，統合廣達各事業群在伺服器端、無線網路端、和使用者終端的各類產品線及領先技術，讓使用者(Anyone)可
+以在任何時候(Anytime)、(Anywhere)任何地方，享受無間斷的雲端技術服務。
+ 
+未來廣達研究院將繼續積極開發全新雲端系統與服務，並結合創新商業模式，創造市場新價值。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://verywed.com/" target="_blank"><img src="/2014/sponsors/veryWedLogo-.png" alt="非常婚禮 veryWed.com" />
+  <div class="sponsor-info">
+    <h2>非常婚禮 veryWed.com</h2>
+    <p>「非常婚禮 veryWed.com」是國內知名的婚禮服務入口網站 / 結婚社群網站。
+創業十餘年來，以開源技術幫助了無數海內外華人完成人生大事。
+近年來積極參與各大開源社群活動，希望大家不要再把我們當成婚友社了 :)</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.gamer.com.tw/" target="_blank"><img src="/2014/sponsors/gamer-logo.jpg" alt="巴哈姆特電玩資訊站" />
+  <div class="sponsor-info">
+    <h2>巴哈姆特電玩資訊站</h2>
+    <p>巴哈姆特成立於 1996 年，當初是第一個以遊戲為主題的 BBS 站，於 2000 年設立公司隨即推出網站服務，如今已經邁入第 17 年。我們的使命是藉由社群力量，將動漫畫、遊戲市場帶到一個更蓬勃、更健全的發展環境。</p>
+
+<p>巴哈姆特有超然的立場，在所有廠商和玩家之中取得屹立不搖的地位，
+我們不變的經營理念是：以最專業、最負責、最客觀的立場，來提供所有玩家們最即時、最有品質、最多元化的服務。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.wabow.com/" target="_blank"><img src="/2014/sponsors/wabow logo.png" alt="哇寶國際資訊股份有限公司" />
+  <div class="sponsor-info">
+    <h2>哇寶國際資訊股份有限公司</h2>
+    <p>哇寶成立於2006年，致力於開發 EC 電商網站，並提供完整的電子商務解決方案。</p>
+
+<p>多家知名品牌皆採用哇寶的服務，包括:<br />
+Zakka 雜貨網、lativ、天母嚴選、Grace gift、衣芙日系、Orenda、OB 嚴選<br />
+特力屋、商業周刊、HOLA、Net、奇哥 、老協珍、HANG TEN、H:Connect </p>
+
+<p>哇寶以「打造你的網路旗艦店」為企業標語，努力打造全新的電商環境，創造品牌和消費者之間絕佳的購物體驗。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://brandma.co/tw/" target="_blank"><img src="/2014/sponsors/BrandmaLogo.png" alt="中域網路科技有限公司" />
+  <div class="sponsor-info">
+    <h2>中域網路科技有限公司</h2>
+    <p>Brandma.co Limited (中域網路科技有限公司) is Greater China's leading experts
+on brand protection and corporate domain asset management. Brandma.co offers comprehensive cloud-based solutions in safeguarding your trademark on the Internet frontier; alerting you when infringement takes place. With offices in Beijing, Hong Kong,
+ and Taipei, our monitoring and enforcement solutions will seek out copycats and counterfeiters on the Internet, then provide brand owners with counterstrike solutions.</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.csdn.net/" target="_blank"><img src="/2014/sponsors/CSDN logo.jpg" alt="CODE" />
+  <div class="sponsor-info">
+    <h2>CODE</h2>
+    <p>CODE是CSDN旗下的开源平台，面向大陆开发者提供项目托管，代码片托管，社交编程，组织管理，开源资讯，讨论组等服务。我们致力于成为大陆一流的开源服务平台，努力促进开发者间的协作与交流，倡导开放  共享的精神，以期促进开源文化，改善大陆开发环境。</p>
+  </div>
+</a></div>
+<h1 id="cohost" data-l10n-id="cohost"></h1>
+<div class="sponsor">
+<a href="http://www.openfoundry.org/" target="_blank"><img src="/2014/sponsors/OSSF-logo-printing2.png" alt="自由軟體鑄造場" />
+  <div class="sponsor-info">
+    <h2>自由軟體鑄造場</h2>
+    <p>OpenFoundry 及 OSSF 的誕生
+順應國內外自由軟體應用日益普及的潮流，中央研究院資訊科學研究所於民國92年接受經濟部工業局「自由軟體產業推動計畫」的補助，成立自由軟體鑄造場 (Open Source Software Foundry，以下簡稱 OSSF )，以擴大自由軟體在臺灣的應用幅度與研發能量。目前經費的來源，部分來自行政院國家科學委員會的補助，部分則來自於中央研究院資訊科技創新研究中心。
+OSSF 重點任務為培植本土自由軟體社群與人才，提供了五大服務：</p>
+
+<ol>
+<li><p>匯集自由軟體領域的專業資源目錄</p></li>
+<li><p>發行自由軟體鑄造場電子報</p></li>
+<li><p>舉辦各類自由軟體活動及工作坊</p></li>
+<li><p>從事校園推廣及提供自由軟體相關教材影片</p></li>
+<li><p>提供法律政策諮詢與服務</p></li>
+</ol>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="https://kktix.com/?utm_source=coscup&amp;utm_medium=sponsor&amp;utm_campaign=general" target="_blank"><img src="/2014/sponsors/kktix logo-178_72.png" alt="KKTIX" />
+  <div class="sponsor-info">
+    <h2>KKTIX</h2>
+    <p>KKTIX 是線上音樂領導品牌 KKBOX 旗下的全功能售票購票平台。無論找活動、辦免費活動、辦售票活動、研討會、演唱會、大食團、郊遊踏青... KKTIX 線上售票平台都是您的好去處。</p>
+
+<p>KKTIX 提供最順暢的購票體驗、最方便的售票平台，以豐富活動點綴眾人生活</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.makezine.com.tw/" target="_blank"><img src="/2014/sponsors/make_TW_140PX.png" alt="MAKE 雜誌" />
+  <div class="sponsor-info">
+    <h2>MAKE 雜誌</h2>
+    <p>MAKE 雜誌</p>
+
+<p>《Make》雜誌於2005年2月在美國創刊， 藉由介紹令人興奮的多樣化動手製作專題， 鼓勵讀者發揮創意充分活用各種科技。 讓讀者盡情發揮改造、破解與重組科技，是《Make》的最大宗旨。</p>
+
+<p>馥林文化於2011年6月出版繁體國際中文版， 以季刊形式發刊，目前已發行至第八期。 今年5月，在台灣舉辦了第一場Maker Faire「Maker Faire: Taipei」， 未來將繼續發掘台灣的Maker和他們的精彩作品， 並透過《Make》國際中文版和Maker Faire活動， 將科技新訊和精采手作製品呈現給大眾。</p>
+  </div>
+</a></div>
+<h1 id="donor" data-l10n-id="personal"></h1>
+<p data-l10n-id="donateDesc"></p>
+<div class="sponsor donor">
+<img />
+  <div class="sponsor-info"><ul>
+<li>ijliao</li>
+<li>Lenny</li>
+<li>OpenBlue</li>
+<li>吳恒毅</li>
+<li>alicekey</li>
+<li>alliu</li>
+<li>Ben Lau</li>
+<li>Cash</li>
+<li>czchen</li>
+<li>Jimmy Liao</li>
+<li>JokerCatz</li>
+<li>Kent Huang</li>
+<li>Leo Chiang</li>
+<li>Lucian </li>
+<li>Peter Pan</li>
+<li>scyu</li>
+<li>Selina Kuo</li>
+<li>Shihta</li>
+<li>stanely</li>
+<li>T.O.</li>
+<li>Vagabond</li>
+<li>王儀琤</li>
+<li>何海光</li>
+<li>林大中</li>
+<li>科科</li>
+<li>郭俊儀</li>
+<li>陳澧萱</li>
+<li>蒼時弦也</li>
+<li>麵包</li>
+</ul>
+</div></div>
+<h1 id="media" data-l10n-id="media"></h1>
+<div class="sponsor">
+<a href="http://technews.tw" target="_blank"><img src="/2014/sponsors/Technews.logo.png" alt="科技新報 （TechNews）" />
+  <div class="sponsor-info">
+    <h2>科技新報 （TechNews）</h2>
+    <p>科技新報 （TechNews）是一群對資訊科技、能源、半導體、行動運算、網際網路、醫療、生物科技具有高度熱忱與興趣的產業與新媒體人士所共同組成的時代新媒體，以產出有觀點與特色的原創文章為主要任務，提供多語言版本與深度化內容，並且走向國際市場，每日持續產生對人類未來有貢獻的相關文章與報導。</p>
+
+<p>在科技新報，我們不只是報導有價值、有意義的資訊，同時也會有具備全局觀點、個人觀點及評論刊載，為市場和業內人士關心的趨勢、內幕與新聞，這些內容與資訊絕大部分都來自於長期觀察與業界人脈累積而來。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.bnext.com.tw/" target="_blank"><img src="/2014/sponsors/Bnextlogo.png" alt="數位時代" />
+  <div class="sponsor-info">
+    <h2>數位時代</h2>
+    <p>《數位時代媒體群》創立於1999年7月，跨越20世紀，走過科技發展的關鍵年代，見證網路新經濟風起雲湧的演進歷程，我們持續探索、記錄、解讀全球正在發生，和即將發生的數位革命與變動。</p>
+
+<p>《數位時代媒體群》為讀者尋找影響下一步的「新觀念」，描繪正在形成的「新環境」，記錄開創未來的「新典範」，深掘新商業模式的「新機會」及「新價值」，為讀者早一步解讀趨勢脈動，領先掌握下一步行動的競爭優勢。</p>
+
+<p>凝聚全台最具影響力的科技菁英社群，集結台灣最具創造力的開發者及創業菁英，成為全台灣最重要的科技財經社群及知識傳播平台。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://linuxpilot.com/" target="_blank"><img src="/2014/sponsors/LPnewlogo.jpg" alt="Linuxpilot" />
+  <div class="sponsor-info">
+    <h2>Linuxpilot</h2>
+    <p>成立於1999年11月的Linux Pilot Ltd.，是一間以Linux及開放源碼軟體知識為本的公司，其產品及服務包括網站新聞資訊、刊物出版及培訓課程，務求以全方位方式滿足各界的學習需求。</p>
+
+<p>而自2001年出版的Linuxpilot月刊，更是現時亞洲市場唯一的中文Linux期刊，至今已出版超過120期，廣為亞洲中文Linux用戶所愛戴。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.cool3c.com/" target="_blank"><img src="/2014/sponsors/cool3C.logo.png" alt="癮科技" />
+  <div class="sponsor-info">
+    <h2>癮科技</h2>
+    <p>癮科技(COOL3C.COM)為台灣知名科技媒體網站，根據全球數據監測公司 comScore 測量，癮科技有每月近百萬名不重複使⽤用者(UV)。癮科技除了每天有12篇左右的國內外 最新3C產品、APP軟體消息,也與 網友分享許多科技⽣生活新知,另外更 透過許多深度分析、實測觀點的專欄，讓科技更貼近網友們的生活。</p>
+
+<p>現在癮科技現在還致力於回答生活中「為什麼」的問題，例如「Youtube影片為什麼觀看次數都會留在301次好一陣子」這樣的小問題，解開了就會有一種爬上山頂喝上兩口涼水的唱快感呢！</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://punnode.com/" target="_blank"><img src="/2014/sponsors/PunNode-logo.png" alt="PunNode" />
+  <div class="sponsor-info">
+    <h2>PunNode</h2>
+    <p>PunNode 是目前台灣最專注於科技創業的媒體，雖然我們在2014年2月10日才開始營運，但首月瀏覽量即逼近90萬，成為台灣科技創業媒體類的前兩名，顯示我們已經成功打入台灣科技創業圈，並有效引起話題與關注，而PunNode更是台灣唯一提供英文版的科技創業媒體。</p>
+
+<p>目前PunNode的合作夥伴有TechNode動點科技、韓國主要科技網站Platum，團隊中擁有豐富的垂直領域內容經營經驗，我們期許能讓台灣的創業團隊與國際接軌，促成更多創業成功的案例。</p>
+  </div>
+</a></div>
+<div class="sponsor">
+<a href="http://www.inside.com.tw/" target="_blank"><img src="/2014/sponsors/inside-logo.png" alt="Inside 硬塞的網路趨勢觀察" />
+  <div class="sponsor-info">
+    <h2>Inside 硬塞的網路趨勢觀察</h2>
+    <p>Inside是台灣科技媒體領導品牌，成立於2009年11月底，係由一群熱愛網路的人所成立的共筆部落格。我們專注於觀察創新、科技、新媒體與網路的趨勢發展，報導新創公司、創業家、網站、行動平台、社群媒體、行銷與數位內容。</p>
+  </div>
+</a></div>
+  </div>
+</div>
+</div>
+<!--social Mobile-->
+<ul id="mobile-social-links" class="no-decoration">
+  <li class="title">Follow Us!!<hr></li>
+  <li><a href="https://www.facebook.com/coscup" target="_blank"><img src="/2014/assets/icon_fb.png" align="absmiddle" /><span>facebook</span></a></li>
+  <li><a href="https://plus.google.com/101434041225212178932" target="_blank"><img src="/2014/assets/icon_gplus.png" align="absmiddle" /><span>Google+</span></a></li>
+  <li><a href="http://www.plurk.com/coscup" target="_blank"><img src="/2014/assets/icon_plurk.png" align="absmiddle" /><span>Plurk</span></a></li>
+  <li><a href="https://twitter.com/coscup" target="_blank"><img src="/2014/assets/icon_twitter.png" align="absmiddle" /><span>twitter</span></a></li>
+  <li><a href="http://blog.coscup.org" target="_blank"><img src="/2014/assets/icon_blog.png"  align="absmiddle" /><span>Blog</span></a></li>
+  <li><a href="http://www.flickr.com/photos/coscup/sets/" target="_blank"><img src="/2014/assets/icon_flickr.png"  align="absmiddle" /><span>flickr</span></a></li>
+  <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" target="_blank"><img src="/2014/assets/icon_utube.png"  align="absmiddle" /><span>Youtube</span></a></li>
+</ul><!--social Mobile end-->
+<!--底-->
+<div id="footer">
+  <ul class="no-decoration">
+    <li><span>&copy; 2014 COSCUP<span></li>
+    <li><a data-l10n-id="contactUs" href="/2014/zh-tw/contact/">聯絡我們</a>|</li>
+    <li><a href="http://coscup.org/2006/" target="_blank">2006</a>|</li>
+    <li><a href="http://coscup.org/2007/" target="_blank">2007</a>|</li>
+    <li><a href="http://coscup.org/2008/" target="_blank">2008</a>|</li>
+    <li><a href="http://coscup.org/2009/" target="_blank">2009</a>|</li>
+    <li><a href="http://coscup.org/2010/" target="_blank">2010</a>|</li>
+    <li><a href="http://coscup.org/2011/" target="_blank">2011</a>|</li>
+    <li><a href="http://coscup.org/2012/" target="_blank">2012</a>|</li>
+    <li><a href="http://coscup.org/2013/" target="_blank">2013</a>|</li>
+  </ul>
+</div>
+</body>
+</html>

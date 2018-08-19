@@ -1,0 +1,28 @@
+<menu "menu">
+<sponsorship "Sponsorship">
+<mailtoSponsor """
+  If you are interested in sponsoring COSCUP, please contact
+  <a href="mailto:sponsorship@coscup.org">sponsorship@coscup.org</a>.
+""">
+<countdownWarning "* Check KKTIX to know actual time">
+<registrationStarted "Registration Started">
+<registrationEnd "Registration closed">
+<countdown "Count Down">
+<contactUs "Contact Us">
+<diamond "Diamond Level">
+<gold "Gold Level">
+<silver "Silver Level">
+<bronze "Bronze Level">
+<cohost "Co-host">
+<media "Media Partners">
+<special "Special Thanks">
+<personal "Individual Sponsorship">
+<specialThanks "Click here to know more supporting partners!">
+<register "Registration Open TODAY!">
+<donateDesc """
+  We appreciate your support! Because of you, COSCUP is doing better. 
+  The following names are ordered by sponsorship amount and number of strokes.
+""">
+<donateAnonymous """
+  ... and {{ $anonymousDonors }} anonymous donors
+""">

@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Program | 2014 COSCUP</title>
+
+<meta name="keywords" content="COSCUP, COSCUP2014, 開源人年會, Conference for Open Source Coders, Users and Promoters Open Source, Free Software, 自由軟體, 開放原始碼, 研討會, 社群, FLOSS">
+<meta name="description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta name="COMPANY" content="COSCUP">
+
+<!--locales-->
+<!--[if gt IE 8]><!-->
+  <link rel="localization" href="/2014/assets/locales/manifest.json">
+  <script type="text/javascript" src="/2014/assets/js/lib/l20n.min.js"></script>
+<!--<![endif]-->
+
+<!--fb shareing-->
+<meta property="og:title" content="2014 COSCUP" />
+<meta name="og:description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://coscup.org/2014/zh-tw/" />
+<meta property="og:site_name" content="2014 COSCUP" />
+<meta property="og:image" content="http://coscup.org/2014/assets/og-image.jpg" />
+
+<!--phone-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="apple-touch-icon" href="/2014/assets/ios-fav.jpg" />
+<link href="/2014/assets/normalize.css" type= "text/css" rel="stylesheet" />
+<link media="only screen and (max-width:768px)" href="/2014/assets/mobile.css?938" type= "text/css" rel="stylesheet" />
+<link media="screen and (min-width:769px)" href="/2014/assets/style.css?938" type="text/css" rel="stylesheet" />
+<!--favicon-->
+<link type="image/x-icon" href="/2014/assets/favicon.ico" rel="shortcut icon">
+
+<!-- GA -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12923351-1']);
+    _gaq.push(['_setDomainName', 'coscup.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script src="/2014/assets/js/lib/require.js"></script>
+<script>
+    require.config({
+      baseUrl: "/2014/assets/js"
+    });
+    //Load common code that includes config, then load the specific
+    //logic for this page. 
+    //Do the require calls here instead of a separate file 
+    //so after a build there are only 2 HTTP requests instead of three.
+    require(['config', 'main-menu', 'sidebar-sponsor'], function () {
+      require(['page/program'], null, function(err) {
+        var failedId = err.requireModules && err.requireModules[0];
+        console.log(failedId + ' is not existing');
+      });
+    });
+</script>
+
+</head>
+<body>
+<div id="header">
+    <img id="mobile-header" src="/2014/assets/mobile/header.jpg" width="100%" />
+    <div class="wrap">
+      <div id="logo"><a href="/2014/en/index.html">COSCUP 2014</a></div>
+        <ul id="languages" class="no-decoration">
+                    <li><a href="/2014/en/program" title="English" data-lang="en-US">EN</a></li>
+          <li><a href="/2014/zh-tw/program" title="正體中文" data-lang="zh-TW">正體</a></li>
+          <li><a href="/2014/zh-cn/program" title="简体中文" data-lang="zh-CN">简体</a></li>
+        </ul>
+	    <ul id="desktop-social-links" class="no-decoration">
+        <li><a href="https://www.facebook.com/coscup" title="facebook" target="_blank"><img src="/2014/assets/icon_fb.png"/></a></li>
+        <li><a href="https://plus.google.com/101434041225212178932" title="Google+" rel="publisher" target="_blank"><img src="/2014/assets/icon_gplus.png"/></a></li>
+        <li><a href="http://www.plurk.com/coscup" title="plurk" target="_blank"><img src="/2014/assets/icon_plurk.png" /></a></li>
+        <li><a href="https://twitter.com/coscup" title="twitter" target="_blank"><img src="/2014/assets/icon_twitter.png" /></a></li>
+        <li><a href="http://blog.coscup.org" title="blog" target="_blank"><img src="/2014/assets/icon_blog.png" /></a></li>
+        <li><a href="http://www.flickr.com/photos/coscup/sets/" title="flickr" target="_blank"><img src="/2014/assets/icon_flickr.png"  /></a></li>
+        <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" title="youtube" target="_blank"><img src="/2014/assets/icon_utube.png" /></a></li>
+	    </ul>
+      <nav id="nav-wrap">
+        <div id="mobile-menu-icon" data-l10n-id="menu">選單</div>
+        <ul id="mainNav" class="no-decoration">
+          <li><a href="/2014/en/index.html">Home</a></li>
+<li><a href="/2014/en/about/">About Us</a></li>
+<li class="current"><a href="/2014/en/program/">Program</a></li>
+<li><a href="/2014/en/venue/">Venue</a></li>
+<li><a href="/2014/en/sponsors/">Sponsors</a></li>
+<li><a href="http://blog.coscup.org/" target="_blank">Blog</a></li>
+<li><a href="/2014/en/contact/">Contact</a></li>
+        </ul>
+      </nav> 
+    </div>
+</div>
+<!--Main-->
+<div id="main">
+<div class="wrap">
+  <!--Sponsor-->
+  <div id="sponsor" class="empty">
+    <h2 data-l10n-id="sponsorship">贊助 COSCUP</h2>
+    <p data-l10n-id="mailtoSponsor"><a href="mailto:sponsorship@coscup.org">sponsorship@coscup.org</a></p>
+  </div>
+  <div id="mySwipe" style='max-width:500px;margin:0 auto' class="swipe empty">
+  </div>
+  <div id="content">
+    <ul class="class_tag"><li class="colorTag-1">Maker</li>
+<li class="colorTag-2">Open Governance &amp; Open Data</li>
+<li class="colorTag-3">Open Source Culture &amp; Communities</li>
+<li class="colorTag-4">Software Technology and Devloping</li>
+<li class="colorTag-5">Open Source Applications</li>
+</ul>
+
+<div id="navTab" class="nav"><ul class="no-decoration"><li><a href="#day1_am">Day 1 AM</a></li>
+<li><a href="#day1_pm">Day 1 PM</a></li>
+<li><a href="#day2_am">Day 2 AM</a></li>
+<li><a href="#day2_pm">Day 2 PM</a></li>
+</ul></div>
+
+<span style="color:red">* We are still updating, check out often!</span><div class="bof"><a href="https://docs.google.com/document/d/1g4tEBCAfRuVeJGpTrgWK_jUBWOXCwwiIGNta8YtWO6c/preview?pli=1&sle=true" target="_blank">COSCUP 2014 BoF detail</a></div><h2 class="pro" id="day1_am">Day 1 AM (7/19)</h2>
+<div rel="1405728900" class="time">08:15 — 09:00</div><div class="article">
+<span class="title">Registration / 報到</span></div>
+<div rel="1405731600" class="time">09:00 — 09:10</div><div class="article">
+<span class="title">Opening / 開幕式</span><br/><span class="sub_title">COSCUP Organizer</span></div>
+<div rel="1405732200" class="time">09:10 — 10:00</div><div class="article">
+<div class="program keynote" data-id="2">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">All Conf. Rooms (Live)</div>  <div class="community"></div></div><div class="body">  <div class="topic ">Maker 《自造世代》</div>  <div class="speaker">《自造世代》電影團隊 x 開源人</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405735200" class="time">10:00 — 10:40</div><div class="article">
+<div class="program" data-id="3">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">從 osdc.tw 到 g0v.tw summit</div>  <div class="speaker">hc (hcchien)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="4">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Real-time Streaming Classification with Storm – The Pinball system</div>  <div class="speaker">Jason Lin</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="5">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">ECMAScript 6 new syntax</div>  <div class="speaker">othree (高偉格)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="6">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">人人都可以成為Maker─多足機器人製作分享「蠍子史加納與小烏龜嘎美拉(ガメラ)」</div>  <div class="speaker">Garfield (盧彥廷)、RB 魔人 (田嘉翔)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="7">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Freedom to Innovate</div>  <div class="speaker">ShaneCoughlan (Shane Coughlan)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="8">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Fedora.next: What's Next?</div>  <div class="speaker">alick (Alick Zhao)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="9">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">The TCP/IP stack in the FreeBSD kernel</div>  <div class="speaker">kevlo (羅謝家偉)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405737600" class="time">10:40 — 10:55</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405738500" class="time">10:55 — 11:45</div><div class="article">
+<span class="title">Keynote (AWS)</span><br/><span class="sub_title"></span></div>
+<div rel="1405741500" class="time">11:45 — 12:25</div><div class="article">
+<div class="program" data-id="12">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">LXQt: The future of lightweight Qt desktop.</div>  <div class="speaker">PCMan (洪任諭)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="13">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">R2</div>  <div class="slide"><a href="http://s5.zoomquiet.io/140703-deverl4cmcm"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">猎豹的DevRel ~ 一个商业公司的社区探索</div>  <div class="speaker">大妈 (Zoom.Quiet)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="14">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic en">How to Make A Scanning Drone</div>  <div class="speaker">Nori(Noritsuna Imamura)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="15">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic en">hacking Mono and .NET</div>  <div class="speaker">atsushieno(Atsushi Enomoto)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="16">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H3</div>  <div class="slide"><a href="http://fourdollars.github.io/lxc-intro/"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">淺談 Linux Container (aka lxc)</div>  <div class="speaker">FourDollars (李世元)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405743900" class="time">12:25 — 13:25</div><div class="article">
+<span class="title">午餐 / lunch</span></div>
+<div class="time_finish"></div>
+<h2 class="pro" id="day1_pm">Day 1 PM (7/19)</h2>
+<div rel="1405747500" class="time">13:25 — 14:15</div><div class="article">
+<div class="program keynote" data-id="18">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">All Conf. Rooms (Live)</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Raspberry Pi最新動向和發佈兩年的體驗</div>  <div class="speaker">Naren Sankar</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405750500" class="time">14:15 — 14:55</div><div class="article">
+<div class="program" data-id="19">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">實現在行動裝置的影像處理和智慧型辨識系統，建立流浪狗協尋及地圖分佈服務</div>  <div class="speaker">James</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="20">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">從開源到開趴 - Open Party(開放政黨)在台灣？</div>  <div class="speaker">charlesc( Charles Chuang)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="21">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">The experiences of developing iManager driver compatible to Linux MFD architecture and submitting SRC to open community</div>  <div class="speaker">Hank (彭詩生)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="22">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H1</div>  <div class="slide"><a href="https://www.dropbox.com/s/cb2aoa0y3c25fxp/2014COSCUP.pdf"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Maker精神＋大學教室</div>  <div class="speaker">江振維</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="24">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: DOIT Taiwan多元開源軟硬體應用實作workshop</div>  <div class="speaker">Sunny(戴揚)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="23">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Embedded developers of all lands, let's share the headaches at LTSI!</div>  <div class="speaker">Hisao Munakata</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="25">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H4</div>  <div class="slide"><a href="http://wush978.github.io/REngineering/#1"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">R語言的工程面</div>  <div class="speaker">Wush (吳齊軒)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405752900" class="time">14:55 — 15:10</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405753800" class="time">15:10 — 15:50</div><div class="article">
+<div class="program" data-id="27">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="slide"><a href="https://github.com/mcdlee/gisVisualization"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">醫療相關的地理資訊視覺化</div>  <div class="speaker">mcdlee (李昕迪)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="28">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">簡單、快速、好舒服
+QNAP NAS 最佳軟體開發平台</div>  <div class="speaker">Gask (黃俊凱)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="29">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R2</div>  <div class="slide"><a href="https://speakerdeck.com/yhsiang/from-congress-cinema-to-civic-live-broadcast"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">從立院影城到公民直播的影音串流技術</div>  <div class="speaker">LY (鄭遠祥)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="30">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">穿越灌木叢林找到授權資訊
+Make a Painstaking Investigation to Find Out the Accurate Licensing Statements of FOSS Projects</div>  <div class="speaker">Florence (葛冬梅)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="24">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: DOIT Taiwan多元開源軟硬體應用實作workshop</div>  <div class="speaker">Sunny(戴揚)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="31">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H3</div>  <div class="slide"><a href="http://www.slideshare.net/philipzh/coscup-fleet-37146567"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Fleet - Container Based Cluster</div>  <div class="speaker">Philipz (鄭淳尹)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="32">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Android Wear and the Future of Smartwatch</div>  <div class="speaker">freedom (Koan-Sin Tan)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405756200" class="time">15:50 — 16:10</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405757400" class="time">16:10 — 16:50</div><div class="article">
+<div class="program" data-id="34">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">沃草，一場Open Data的實驗</div>  <div class="speaker">雨蒼 (林哲瑋)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="35">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">讓開源更好地促進教育發展</div>  <div class="speaker">ghosTM55 (Thomas Yao)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="36">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R2</div>  <div class="slide"><a href="https://dl.dropboxusercontent.com/u/3991557/news.pdf"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">電腦不只會選土豆，還會幫你選新聞</div>  <div class="speaker">Andy (戴克任)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="37">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">play data ! play nlp !</div>  <div class="speaker">ChiaChi (張家齊)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="24">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: DOIT Taiwan多元開源軟硬體應用實作workshop</div>  <div class="speaker">Sunny(戴揚)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="38">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Open Source Compiler 戰國時代的軍備競賽</div>  <div class="speaker">Kito Cheng</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="39">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">從小開始 open source 學程式</div>  <div class="speaker">Dogbert (杜紹堯)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405759800" class="time">16:50 — 17:00</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405760400" class="time">17:00 — 17:40</div><div class="article">
+<div class="program" data-id="41">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Technical talk by AWS</div>  <div class="speaker"></div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="42">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">The Noto Sans CJK Font and Its Making</div>  <div class="speaker">kcwu (吳光哲)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="43">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Firefox OS - 大型開放原始碼專案是怎麼煉成的</div>  <div class="speaker">gasolin</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="44">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Scrapy: DIY creating machine-readable data we need before data open.</div>  <div class="speaker">Sammy Fung</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="46">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Secure Boot Survival Guide</div>  <div class="speaker">glin (Gary Lin)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="45">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Raspberry Pi好好玩</div>  <div class="speaker">sosorry (許乃文)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="47">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">HanGee 國民機運動，讓公民詮釋科技</div>  <div class="speaker">Fred Chien (錢逢祥)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405762800" class="time">17:40 — 17:50</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405763400" class="time">17:50 — 18:30</div><div class="article">
+<div class="program" data-id="49">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">State of the unison: g0v 村情咨文</div>  <div class="speaker">clkao</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="50">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">開源測量儀器和3D列印產品使用經驗: Red Pitaya, Ormerod</div>  <div class="speaker">Yan (Yan Wai)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="51">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Automating Your Workflow With gulp.js</div>  <div class="speaker">appleboy (Bo-Yi Wu)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="52">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic ">「Support 在開源專案扮演的角色」 ，以 Mozilla Support (support.mozilla.org) 為例</div>  <div class="speaker">Ernest Chiang</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="54">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">別人可以我們不行？Open Source CMS導入政府之濫觴與爛傷</div>  <div class="speaker">Jimmy (Jimmy Huang)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="53">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Crossing Office Applications</div>  <div class="speaker">依瑪貓</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="55">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Scala 跨平台遊戲開發之 101</div>  <div class="speaker">Raincole (賴宇宣)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405765800" class="time">18:30 — 21:00</div><div class="article">
+<span class="title">BoF</span><br/><span class="sub_title"></span></div>
+<div class="time_finish"></div>
+<h2 class="pro" id="day2_am">Day 2 AM (7/20)</h2>
+<div rel="1405815300" class="time">08:15 — 09:00</div><div class="article">
+<span class="title">Registration / 報到</span></div>
+<div rel="1405818000" class="time">09:00 — 09:50</div><div class="article">
+<div class="program keynote" data-id="58">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">All Conf. Rooms (Live)</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">ASUS Cloud Platform - Enables Mobile, Cloud, Bigdata and Social Application</div>  <div class="speaker">華碩雲端</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405821000" class="time">09:50 — 10:30</div><div class="article">
+<div class="program" data-id="59">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="slide"><a href="http://www.slideshare.net/ipachiu/g0v2014-coscup"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">從沒有人到超多人：g0v社群經驗</div>  <div class="speaker">ipa</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="60">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">在豆瓣的这两年 - CODE系统开发之旅</div>  <div class="speaker">清风</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="61">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Cython - Making Python as Fast as C</div>  <div class="speaker">Mosky (Mosky Liu)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="62">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">座談會：自由社群如何聚會？</div>  <div class="speaker">與談：Irvin、Reke、依瑪貓、Dennis；主持：上官良治</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="64">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">DesignSpark免費設計資源工作坊</div>  <div class="speaker">Yan Wai (衞欣欣)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="63">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">使用自由軟體玩轉3D Printer</div>  <div class="speaker">tonghuix (佟辉)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="65">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: 視覺化工作坊</div>  <div class="speaker">Muyueh (李慕約)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+</div>
+<div rel="1405823400" class="time">10:30 — 10:45</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405824300" class="time">10:45 — 11:25</div><div class="article">
+<div class="program" data-id="67">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">適份適當地爬網路資料 – 解決Open Data燃眉之急時的必要之惡 / Do the Open Data web crawling in proper way within the principles of legal boundaries</div>  <div class="speaker">Lucien (林誠夏)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="68">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Skymizer 雲端編譯 / Skymizer: Build Software Better and Faster On The Cloud</div>  <div class="speaker">Luba Tang (唐文力)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="69">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">參與LAC(Linux audio conference)經驗與轉移至自由軟體下的創作分享</div>  <div class="speaker">Yens</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="70">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H1</div>  <div class="slide"><a href="http://b81.org/s/openedu.html"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">將開源社群與精神帶入教育</div>  <div class="speaker">weijr (魏澤人)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="64">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">DesignSpark免費設計資源工作坊</div>  <div class="speaker">Yan Wai (衞欣欣)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="71">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Make MySQL a Better MySQL - the tips of optimize the database performance</div>  <div class="speaker">Ryusuke Kajiyama (Kaji)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="65">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: 視覺化工作坊</div>  <div class="speaker">Muyueh (李慕約)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+</div>
+<div rel="1405826700" class="time">11:25 — 11:40</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405827600" class="time">11:40 — 12:20</div><div class="article">
+<div class="program" data-id="73">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Open Source FabLab</div>  <div class="speaker">Ted (洪堯泰)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="74">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Building a Real-time, Big Data Analytics Platform with Solr</div>  <div class="speaker">華碩雲端</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="75">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic en">10 ways open source is important for people other than engineers</div>  <div class="speaker">David Ascher</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="76">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic en">Creating or Improving an in-House Free and Open Source Software (FOSS) Compliance Program</div>  <div class="speaker">Helen Tieh (鐵維寧)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="64">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">DesignSpark免費設計資源工作坊</div>  <div class="speaker">Yan Wai (衞欣欣)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+<div class="program" data-id="77">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">在  Arduino 上使用 Java VM 開發互動式應用</div>  <div class="speaker">wycc (王佑中)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="65">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Workshop: 視覺化工作坊</div>  <div class="speaker">Muyueh (李慕約)</div>  <div class="speaker-title"></div>  <div class="ps">* cross-time session</div></div></div></div>
+</div>
+<div rel="1405830000" class="time">12:20 — 13:10</div><div class="article">
+<span class="title">午餐 / lunch</span></div>
+<div class="time_finish"></div>
+<h2 class="pro" id="day2_pm">Day 2 PM (7/20)</h2>
+<div rel="1405833000" class="time">13:10 — 13:50</div><div class="article">
+<div class="program" data-id="79">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">黑暗中飛翔的程式碼：視障生投入自由軟體開發</div>  <div class="speaker">jserv (黃敬群), 詹博丞</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="80">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">MySQL Workbench 6.1導覽</div>  <div class="speaker">Ivan (杜修文)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="81">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">虛擬歌手打造經驗分享</div>  <div class="speaker">MGdesigner (張正一)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="82">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">還圖於民：當 OpenStreetMap 遇上社會議題</div>  <div class="speaker">Littlebtc 小B (尤孝庭)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="83">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">開源人年會的開源網站</div>  <div class="speaker">Evelyn (Evelyn Hung)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="84">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Arduino 生活應用</div>  <div class="speaker">Jacky</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="85">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">3D Printer關鍵軟體控制技術之分析與探討</div>  <div class="speaker">hellion (莊竣傑)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405835400" class="time">13:50 — 14:10</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405836600" class="time">14:10 — 14:50</div><div class="article">
+<div class="program" data-id="87">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">3D打印，由開源到學校到社區</div>  <div class="speaker">Parker (梁志宏)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="88">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Open PIXNET</div>  <div class="speaker">Cloud (宋享諭)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="89">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Rethinking scalable real-time cloud service that serves 100K concurrent QPS with Scala, Akka, and Actor based design</div>  <div class="speaker">Austin (黃俊傑)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="90">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Open Government &amp; Citizens' Right To Know</div>  <div class="speaker">Annie (Annie Shih)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="91">  <div class="metadata track_tag colorTag-5">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">放射科醫師如何借由開源軟體增進效率 -- 以自動化骨密度報告系統為例</div>  <div class="speaker">鳥達 (蔡依達)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="92">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H3</div>  <div class="slide"><a href="https://speakerdeck.com/xdite/community"><img src="/2014/assets/icon_slide.png" /></a></div>  <div class="community"></div></div><div class="body">  <div class="topic zh">Building Rails Workshop</div>  <div class="speaker">xdite</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405839000" class="time">14:50 — 15:30</div><div class="article">
+<div class="program" data-id="93">  <div class="metadata track_tag colorTag-1">  <div class="head"><div class="place">R0</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">開源低成本多旋翼無人飛行器與公民社會議題應用</div>  <div class="speaker">琳風 (張東琳)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="94">  <div class="metadata track_tag colorTag-4">  <div class="head"><div class="place">R1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">How KKBOX use mrjob to bring python, hadoop, AWS together</div>  <div class="speaker">aaronlin(Aaron Lin)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="95">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">R2</div>  <div class="community"></div></div><div class="body">  <div class="topic en">讓矽谷最頂尖創投「紅杉資本」技術副總裁告訴你，如何開源解碼搶先機，邁向世界舞台！</div>  <div class="speaker">Roy (Anandamoy Roychowdhary)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="96">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">H1</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">核四、車禍、菜價視覺化</div>  <div class="speaker">Muyueh (李慕約)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="98">  <div class="metadata track_tag colorTag-2">  <div class="head"><div class="place">H2</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">用 Python 玩 LHC 公開數據 / Python Meets LHC Open Data</div>  <div class="speaker">YChao (趙元)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="97">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H3</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">程式設計教學之 Python 不完全解決方案</div>  <div class="speaker">keitheis (Keith Yang)</div>  <div class="speaker-title"></div></div></div></div>
+<div class="program" data-id="99">  <div class="metadata track_tag colorTag-3">  <div class="head"><div class="place">H4</div>  <div class="community"></div></div><div class="body">  <div class="topic zh">學生計算機年會：由播種到綻放</div>  <div class="speaker">RSChiang (姜柏任)</div>  <div class="speaker-title"></div></div></div></div>
+</div>
+<div rel="1405841400" class="time">15:30 — 15:45</div><div class="article">
+<span class="title">break</span></div>
+<div rel="1405842300" class="time">15:45 — 16:45</div><div class="article">
+<span class="title">Lightning Talk / 閃電秀</span><br/><span class="sub_title"></span></div>
+<div rel="1405845900" class="time">16:45 — 17:00</div><div class="article">
+<span class="title">Closing / 閉幕式</span><br/><span class="sub_title"></span></div>
+<div class="time_finish"></div>
+<div id="lock_background"><div id="program_detail" class="program"></div></div>  </div>
+</div>
+</div>
+<!--social Mobile-->
+<ul id="mobile-social-links" class="no-decoration">
+  <li class="title">Follow Us!!<hr></li>
+  <li><a href="https://www.facebook.com/coscup" target="_blank"><img src="/2014/assets/icon_fb.png" align="absmiddle" /><span>facebook</span></a></li>
+  <li><a href="https://plus.google.com/101434041225212178932" target="_blank"><img src="/2014/assets/icon_gplus.png" align="absmiddle" /><span>Google+</span></a></li>
+  <li><a href="http://www.plurk.com/coscup" target="_blank"><img src="/2014/assets/icon_plurk.png" align="absmiddle" /><span>Plurk</span></a></li>
+  <li><a href="https://twitter.com/coscup" target="_blank"><img src="/2014/assets/icon_twitter.png" align="absmiddle" /><span>twitter</span></a></li>
+  <li><a href="http://blog.coscup.org" target="_blank"><img src="/2014/assets/icon_blog.png"  align="absmiddle" /><span>Blog</span></a></li>
+  <li><a href="http://www.flickr.com/photos/coscup/sets/" target="_blank"><img src="/2014/assets/icon_flickr.png"  align="absmiddle" /><span>flickr</span></a></li>
+  <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" target="_blank"><img src="/2014/assets/icon_utube.png"  align="absmiddle" /><span>Youtube</span></a></li>
+</ul><!--social Mobile end-->
+<!--底-->
+<div id="footer">
+  <ul class="no-decoration">
+    <li><span>&copy; 2014 COSCUP<span></li>
+    <li><a data-l10n-id="contactUs" href="/2014/en/contact/">聯絡我們</a>|</li>
+    <li><a href="http://coscup.org/2006/" target="_blank">2006</a>|</li>
+    <li><a href="http://coscup.org/2007/" target="_blank">2007</a>|</li>
+    <li><a href="http://coscup.org/2008/" target="_blank">2008</a>|</li>
+    <li><a href="http://coscup.org/2009/" target="_blank">2009</a>|</li>
+    <li><a href="http://coscup.org/2010/" target="_blank">2010</a>|</li>
+    <li><a href="http://coscup.org/2011/" target="_blank">2011</a>|</li>
+    <li><a href="http://coscup.org/2012/" target="_blank">2012</a>|</li>
+    <li><a href="http://coscup.org/2013/" target="_blank">2013</a>|</li>
+  </ul>
+</div>
+</body>
+</html>

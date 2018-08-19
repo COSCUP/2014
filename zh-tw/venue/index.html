@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>地點 | 2014 COSCUP</title>
+
+<meta name="keywords" content="COSCUP, COSCUP2014, 開源人年會, Conference for Open Source Coders, Users and Promoters Open Source, Free Software, 自由軟體, 開放原始碼, 研討會, 社群, FLOSS">
+<meta name="description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta name="COMPANY" content="COSCUP">
+
+<!--locales-->
+<!--[if gt IE 8]><!-->
+  <link rel="localization" href="/2014/assets/locales/manifest.json">
+  <script type="text/javascript" src="/2014/assets/js/lib/l20n.min.js"></script>
+<!--<![endif]-->
+
+<!--fb shareing-->
+<meta property="og:title" content="2014 COSCUP" />
+<meta name="og:description" content="COSCUP 2014, 7/19-20 中央研究院。台灣 Opens Source 相關社群聯合舉辦的大型開放源碼研討會。讓世界各地的 FLOSS 愛好者、專家藉由開源人年會齊聚一堂，分享經驗、想法與新技術，共同激發群眾投入貢獻開源 / 自由軟體。">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://coscup.org/2014/zh-tw/" />
+<meta property="og:site_name" content="2014 COSCUP" />
+<meta property="og:image" content="http://coscup.org/2014/assets/og-image.jpg" />
+
+<!--phone-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link rel="apple-touch-icon" href="/2014/assets/ios-fav.jpg" />
+<link href="/2014/assets/normalize.css" type= "text/css" rel="stylesheet" />
+<link media="only screen and (max-width:768px)" href="/2014/assets/mobile.css?579" type= "text/css" rel="stylesheet" />
+<link media="screen and (min-width:769px)" href="/2014/assets/style.css?579" type="text/css" rel="stylesheet" />
+<!--favicon-->
+<link type="image/x-icon" href="/2014/assets/favicon.ico" rel="shortcut icon">
+
+<!-- GA -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12923351-1']);
+    _gaq.push(['_setDomainName', 'coscup.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<script src="/2014/assets/js/lib/require.js"></script>
+<script>
+    require.config({
+      baseUrl: "/2014/assets/js"
+    });
+    //Load common code that includes config, then load the specific
+    //logic for this page. 
+    //Do the require calls here instead of a separate file 
+    //so after a build there are only 2 HTTP requests instead of three.
+    require(['config', 'main-menu', 'sidebar-sponsor'], function () {
+      require(['page/venue'], null, function(err) {
+        var failedId = err.requireModules && err.requireModules[0];
+        console.log(failedId + ' is not existing');
+      });
+    });
+</script>
+
+</head>
+<body>
+<div id="header">
+    <img id="mobile-header" src="/2014/assets/mobile/header.jpg" width="100%" />
+    <div class="wrap">
+      <div id="logo"><a href="/2014/zh-tw/index.html">COSCUP 2014</a></div>
+        <ul id="languages" class="no-decoration">
+                    <li><a href="/2014/en/venue" title="English" data-lang="en-US">EN</a></li>
+          <li><a href="/2014/zh-tw/venue" title="正體中文" data-lang="zh-TW">正體</a></li>
+          <li><a href="/2014/zh-cn/venue" title="简体中文" data-lang="zh-CN">简体</a></li>
+        </ul>
+	    <ul id="desktop-social-links" class="no-decoration">
+        <li><a href="https://www.facebook.com/coscup" title="facebook" target="_blank"><img src="/2014/assets/icon_fb.png"/></a></li>
+        <li><a href="https://plus.google.com/101434041225212178932" title="Google+" rel="publisher" target="_blank"><img src="/2014/assets/icon_gplus.png"/></a></li>
+        <li><a href="http://www.plurk.com/coscup" title="plurk" target="_blank"><img src="/2014/assets/icon_plurk.png" /></a></li>
+        <li><a href="https://twitter.com/coscup" title="twitter" target="_blank"><img src="/2014/assets/icon_twitter.png" /></a></li>
+        <li><a href="http://blog.coscup.org" title="blog" target="_blank"><img src="/2014/assets/icon_blog.png" /></a></li>
+        <li><a href="http://www.flickr.com/photos/coscup/sets/" title="flickr" target="_blank"><img src="/2014/assets/icon_flickr.png"  /></a></li>
+        <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" title="youtube" target="_blank"><img src="/2014/assets/icon_utube.png" /></a></li>
+	    </ul>
+      <nav id="nav-wrap">
+        <div id="mobile-menu-icon" data-l10n-id="menu">選單</div>
+        <ul id="mainNav" class="no-decoration">
+          <li><a href="/2014/zh-tw/index.html">首頁</a></li>
+<li><a href="/2014/zh-tw/about/">活動簡介</a></li>
+<li><a href="/2014/zh-tw/program/">議程</a></li>
+<li class="current"><a href="/2014/zh-tw/venue/">地點</a></li>
+<li><a href="/2014/zh-tw/sponsors/">贊助單位</a></li>
+<li><a href="http://blog.coscup.org/" target="_blank">部落格</a></li>
+<li><a href="/2014/zh-tw/contact/">聯絡資訊</a></li>
+        </ul>
+      </nav> 
+    </div>
+</div>
+<!--Main-->
+<div id="main">
+<div class="wrap">
+  <!--Sponsor-->
+  <div id="sponsor" class="empty">
+    <h2 data-l10n-id="sponsorship">贊助 COSCUP</h2>
+    <p data-l10n-id="mailtoSponsor"><a href="mailto:sponsorship@coscup.org">sponsorship@coscup.org</a></p>
+  </div>
+  <div id="mySwipe" style='max-width:500px;margin:0 auto' class="swipe empty">
+  </div>
+  <div id="content">
+    <h1>地點</h1>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14459.076389057125!2d121.61229245492248!3d25.04190896438523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53ceacf197917004!2z5Lq65paH56S-5pyD56eR5a246IGv5ZCI5ZyW5pu46aSoL-S4reWkrueglOeptumZog!5e0!3m2!1szh-TW!2stw!4v1399563967266" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+<h1>COSCUP 2014 會場地點</h1>
+
+<p>中央研究院 人文社會科學館、活動中心（台北市南港區研究院路二段128號）</p>
+
+<h1>交通資訊</h1>
+
+<h2>一、捷運南港展覽館站<-->人文館</h2>
+
+<ul>
+<li>1.搭乘公車212、276、306、620、645、679、205、
+　 小5、小1、小12 至中研院站，然後步行入院內至人文館。</li>
+<li>2.搭乘計程車，約100 元，計程車可以直接開到人文館門口。</li>
+</ul>
+
+<h2>二、捷運南港站<-->人文館</h2>
+
+<ul>
+<li>1.從2號出口右轉換乘公車212(直)、212(區)、270或藍25 至中研院站，然後步行入院內至人文館。</li>
+<li>2.搭乘計程車，約100 元，計程車可以直接開到人文館門口。</li>
+</ul>
+
+<h2>三、松山機場<-->人文館</h2>
+
+<ul>
+<li>搭乘捷運至南港或南港展覽館站後，參考上述方案至人文館。</li>
+</ul>
+
+<h2>四、桃園機場<-->人文館</h2>
+
+<ul>
+<li>1.搭乘國光客運1819至台北火車站後轉乘捷運，參考上述方案至人文館。</li>
+<li>2.搭乘計程車直接到人文館，約1200元。</li>
+</ul>
+
+<h2>四、自行開車</h2>
+
+<ul>
+<li>1.經由國道三號，南深路-中研院匝道〈16km〉出國道三號後，左轉接南深路，再左轉接舊莊路一段直走，遇到與研究院路叉路口，即可看到中研院。</li>
+</ul>
+
+<p><strong>更詳細的資料，請看<a href='http://www.sinica.edu.tw/location.htm' target='_blank'>官方說明</a>。</strong></p>
+  </div>
+</div>
+</div>
+<!--social Mobile-->
+<ul id="mobile-social-links" class="no-decoration">
+  <li class="title">Follow Us!!<hr></li>
+  <li><a href="https://www.facebook.com/coscup" target="_blank"><img src="/2014/assets/icon_fb.png" align="absmiddle" /><span>facebook</span></a></li>
+  <li><a href="https://plus.google.com/101434041225212178932" target="_blank"><img src="/2014/assets/icon_gplus.png" align="absmiddle" /><span>Google+</span></a></li>
+  <li><a href="http://www.plurk.com/coscup" target="_blank"><img src="/2014/assets/icon_plurk.png" align="absmiddle" /><span>Plurk</span></a></li>
+  <li><a href="https://twitter.com/coscup" target="_blank"><img src="/2014/assets/icon_twitter.png" align="absmiddle" /><span>twitter</span></a></li>
+  <li><a href="http://blog.coscup.org" target="_blank"><img src="/2014/assets/icon_blog.png"  align="absmiddle" /><span>Blog</span></a></li>
+  <li><a href="http://www.flickr.com/photos/coscup/sets/" target="_blank"><img src="/2014/assets/icon_flickr.png"  align="absmiddle" /><span>flickr</span></a></li>
+  <li><a href="http://www.youtube.com/user/thecoscup?feature=watch" target="_blank"><img src="/2014/assets/icon_utube.png"  align="absmiddle" /><span>Youtube</span></a></li>
+</ul><!--social Mobile end-->
+<!--底-->
+<div id="footer">
+  <ul class="no-decoration">
+    <li><span>&copy; 2014 COSCUP<span></li>
+    <li><a data-l10n-id="contactUs" href="/2014/zh-tw/contact/">聯絡我們</a>|</li>
+    <li><a href="http://coscup.org/2006/" target="_blank">2006</a>|</li>
+    <li><a href="http://coscup.org/2007/" target="_blank">2007</a>|</li>
+    <li><a href="http://coscup.org/2008/" target="_blank">2008</a>|</li>
+    <li><a href="http://coscup.org/2009/" target="_blank">2009</a>|</li>
+    <li><a href="http://coscup.org/2010/" target="_blank">2010</a>|</li>
+    <li><a href="http://coscup.org/2011/" target="_blank">2011</a>|</li>
+    <li><a href="http://coscup.org/2012/" target="_blank">2012</a>|</li>
+    <li><a href="http://coscup.org/2013/" target="_blank">2013</a>|</li>
+  </ul>
+</div>
+</body>
+</html>
