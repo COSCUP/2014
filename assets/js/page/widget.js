@@ -102,7 +102,7 @@ define(['jquery', 'context'], function($, context) {
     $.getJSON(
       //window.location.href.match(/^http:\/\/[ipv6\.]*coscup.org\/[^\/]+\//)[0] + 'api/plurk/',
       //FIXME before we figure out how to generate plurk API, let use 2012's copy temporarily.
-      'http://coscup.org/2012/api/plurk/',
+      'https://coscup.org/2012/api/plurk/',
       function (data) {
         plurks = data;
         showSocialBuzz(plurks, twits);
