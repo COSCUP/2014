@@ -1,7 +1,7 @@
 define(['jquery', 'context'], function($, context) {
   'use strict';
 
-  var api_url = context.origin + context.api_path + '/menu/?callback=?';
+  var api_url = context.origin + context.api_path + '/menu.json';
 
   // init: Load navigation from API if it's empty
   function menuInit() {

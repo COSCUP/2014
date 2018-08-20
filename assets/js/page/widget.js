@@ -9,7 +9,7 @@ define(['jquery', 'context'], function($, context) {
 
   'use strict';
 
-  var api_url = context.origin + context.api_path + '/news/?callback=?'; 
+  var api_url = context.origin + context.api_path + '/news.json'; 
 
   function loadNewsWidget() {
     if ($('.news > .news_list.empty').length) {

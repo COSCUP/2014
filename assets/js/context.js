@@ -14,7 +14,7 @@ define(['jquery'], function($) {
   var lang = ((result && result[1]) || 'zh-tw').toLowerCase();
 
   return {
-    origin: 'http://coscup.org',
+    origin: '',
     api_path: '/2014/api',
     lang: lang,
     mobile: isMobile

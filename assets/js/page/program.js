@@ -5,7 +5,7 @@ define(['jquery', 'context' , 'lib/bootstrap-scrollspy', './program-filter'], fu
 
   'use strict';
 
-  var api_url = context.origin + context.api_path + '/program/?callback=?';
+  var api_url = context.origin + context.api_path + '/program.json';
   var program_data = null;
 
   function init() {
